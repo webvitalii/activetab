@@ -1,0 +1,639 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: activetab v0.4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-21 16:55+0200\n"
+"PO-Revision-Date: 2013-07-21 16:55+0200\n"
+"Last-Translator: webvitaly <webvitaly@gmail.com>\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ activetab
+#: 404.php:7
+msgid "Page not found. Error 404"
+msgstr "Seite nicht gefunden. Error 404"
+
+# @ activetab
+#: 404.php:12
+msgid "The URL you requested could not be found."
+msgstr "Die Webseite konnte nicht gefunden werden."
+
+# @ activetab
+#: 404.php:29 sidebar.php:58
+msgid "Popular posts"
+msgstr "Beliebte Meldungen"
+
+# @ activetab
+#: 404.php:50 sidebar.php:81
+msgid "Recent posts"
+msgstr "Aktuelle Meldungen"
+
+# @ activetab
+#: archive.php:12
+#, php-format
+msgid "Category: %s"
+msgstr "Kategorie: %s"
+
+# @ activetab
+#: archive.php:13
+msgid "Category RSS feed"
+msgstr "Kategorie RSS Feed"
+
+# @ activetab
+#: archive.php:16
+#, php-format
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+# @ activetab
+#: archive.php:17
+msgid "Tag RSS feed"
+msgstr "Tag RSS Feed"
+
+# @ activetab
+#: archive.php:22
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+# @ activetab
+#: archive.php:25
+msgid "Author RSS feed"
+msgstr "Autor RSS Feed"
+
+# @ activetab
+#: archive.php:28
+#, php-format
+msgid "Day: %s"
+msgstr "Tag: %s"
+
+# @ activetab
+#: archive.php:31
+#, php-format
+msgid "Month: %s"
+msgstr "Monat: %s"
+
+# @ activetab
+#: archive.php:34
+#, php-format
+msgid "Year: %s"
+msgstr "Jahr: %s"
+
+# @ activetab
+#: archive.php:37
+msgid "Archives"
+msgstr "Archiv"
+
+# @ activetab
+#: comments.php:9
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Diese Meldung ist kennwortgeschützt. Bitte Kennwort eingeben um die "
+"Kommentare zu sehen."
+
+# @ activetab
+#: comments.php:23
+#, php-format
+msgid "1 comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "1 Kommentar zu &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
+
+# @ activetab
+#: comments.php:26
+msgid "Post comments RSS feed"
+msgstr "Kommentare zu schreiben RSS Feed"
+
+# @ activetab
+#: comments.php:37 comments.php:58
+msgid "&larr; Previous comments"
+msgstr "&larr; Bisherige Kommentare"
+
+# @ activetab
+#: comments.php:40 comments.php:61
+msgid "Next comments &rarr;"
+msgstr "Weiter Kommentare &rarr;"
+
+# @ activetab
+#: comments.php:76 comments.php:109
+msgid "Cancel reply"
+msgstr "Antwort abbrechen"
+
+# @ activetab
+#: comments.php:81 comments.php:101
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+"Sie müssen <a href=\"%s\">einglogged sein</a> um einen Kommentar zu "
+"schreiben."
+
+# @ activetab
+#: comments.php:96
+msgid "Name"
+msgstr "Name"
+
+# @ activetab
+#: comments.php:97
+msgid "Email"
+msgstr "Email"
+
+# @ activetab
+#: comments.php:97
+msgid "Email will not be published"
+msgstr "Email wird nicht veröffentlicht"
+
+# @ activetab
+#: comments.php:98
+msgid "Website"
+msgstr "Webseite"
+
+# @ activetab
+#: comments.php:98
+msgid "Example: http://google.com"
+msgstr "Beispiel: http://google.com"
+
+# @ activetab
+#: comments.php:100
+msgid "Comment"
+msgstr "Kommentar"
+
+# @ activetab
+#: comments.php:102
+#, php-format
+msgid ""
+"You logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\">Log out</a>"
+msgstr ""
+"Sie sind eingeloggt als <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s"
+"\">Abmelden</a>"
+
+# @ activetab
+#: comments.php:104
+msgid "Allowed HTML tags:"
+msgstr "Erlaubte HTML-Tags:"
+
+# @ activetab
+#: comments.php:107 comments.php:110
+msgid "Submit comment"
+msgstr "Kommentar absenden"
+
+# @ activetab
+#: comments.php:108
+#, php-format
+msgid "Submit reply to %s"
+msgstr "Antwort absenden an %s"
+
+# @ activetab
+#: content-list.php:7 content-single.php:7 content.php:7
+msgid "Sticky"
+msgstr "Sticky"
+
+# @ activetab
+#: content-page.php:12 content-single.php:21 image.php:80
+msgid "Pages:"
+msgstr "Seiten:"
+
+# @ activetab
+#: footer.php:36
+msgid "Powered by"
+msgstr "Powered by"
+
+# @ activetab
+#: footer.php:37
+msgid "WordPress CMS"
+msgstr "WordPress CMS"
+
+# @ activetab
+#: footer.php:37
+msgid "WordPress"
+msgstr "WordPress"
+
+# @ activetab
+#: footer.php:37 functions.php:276 functions.php:288
+msgid ", "
+msgstr ", "
+
+# @ activetab
+#: footer.php:38
+msgid "activetab theme"
+msgstr "activetab theme"
+
+# @ activetab
+#: footer.php:38
+msgid "activetab"
+msgstr "activetab"
+
+# @ activetab
+#: footer.php:42
+msgid "Posts RSS feed"
+msgstr "Meldungen RSS feed"
+
+# @ activetab
+#: footer.php:43
+msgid "Comments RSS feed"
+msgstr "Kommentar RSS feed"
+
+# @ activetab
+#: functions.php:44
+msgid "Primary menu"
+msgstr "Primär-Menü"
+
+# @ activetab
+#: functions.php:74
+msgid "Nature"
+msgstr ""
+
+# @ activetab
+#: functions.php:79
+msgid "Relax"
+msgstr ""
+
+# @ activetab
+#: functions.php:84
+msgid "Space"
+msgstr ""
+
+# @ activetab
+#: functions.php:109
+msgid "Sidebar"
+msgstr ""
+
+# @ activetab
+#: functions.php:118
+msgid "Footer"
+msgstr ""
+
+# @ activetab
+#: functions.php:156
+#, php-format
+msgid "page %s"
+msgstr ""
+
+# @ activetab
+#: functions.php:176
+msgid "Pingback:"
+msgstr ""
+
+# @ activetab
+#: functions.php:178
+msgid "Trackback:"
+msgstr ""
+
+# @ activetab
+#: functions.php:182 functions.php:218
+msgid "Edit"
+msgstr ""
+
+# @ activetab
+#: functions.php:208
+msgid "Post author"
+msgstr "Autor der Meldung"
+
+# @ activetab
+#: functions.php:215 functions.php:257
+msgid "Author"
+msgstr "Autor"
+
+# @ activetab
+#: functions.php:216 functions.php:246
+msgid "Published"
+msgstr "Veröffentlicht"
+
+# @ activetab
+#: functions.php:225
+msgid "Your comment is awaiting moderation."
+msgstr "Ihr Kommentar wird durch einen Moderator geprüft."
+
+# @ activetab
+#: functions.php:233
+msgid "Reply"
+msgstr "Antworten"
+
+# @ activetab
+#: functions.php:267
+msgid "Comments"
+msgstr "Kommentare"
+
+# @ activetab
+#: functions.php:278 sidebar.php:93
+msgid "Categories"
+msgstr "Kategorien"
+
+# @ activetab
+#: functions.php:290
+msgid "Tags"
+msgstr ""
+
+# @ activetab
+#: functions.php:316
+msgid "&larr; Previous posts"
+msgstr "&larr; Ältere Meldungen"
+
+# @ activetab
+#: functions.php:319
+msgid "Next posts &rarr;"
+msgstr "Neuere Meldungen &rarr;"
+
+# @ activetab
+#: image.php:18
+#, php-format
+msgid ""
+"<a href=\"%1$s\" title=\"Link to full-size image\">%2$s &times; %3$s</a> in "
+"<a href=\"%4$s\" title=\"Return to %5$s\" rel=\"gallery\">%6$s</a>"
+msgstr ""
+
+# @ activetab
+#: index.php:24
+msgid "No posts to display"
+msgstr "Keine Meldungen vorhanden"
+
+# @ activetab
+#: options.php:17
+msgid "Design"
+msgstr ""
+
+# @ activetab
+#: options.php:22
+msgid "Fixed"
+msgstr ""
+
+# @ activetab
+#: options.php:23
+msgid "Static"
+msgstr ""
+
+# @ activetab
+#: options.php:26
+msgid "Menu position type"
+msgstr ""
+
+# @ activetab
+#: options.php:35
+msgid "Logo"
+msgstr ""
+
+# @ activetab
+#: options.php:42
+msgid "Show site title in the header"
+msgstr "Seitentitel im Kopf anzeigen"
+
+# @ activetab
+#: options.php:43
+#, php-format
+msgid "<a href=\"%s\">Edit site title</a>"
+msgstr ""
+
+# @ activetab
+#: options.php:50
+msgid "Show site description in the header"
+msgstr "Seitenbeschreibung im Kopf anzeigen"
+
+# @ activetab
+#: options.php:51
+#, php-format
+msgid "<a href=\"%s\">Edit site description</a>"
+msgstr ""
+
+# @ activetab
+#: options.php:59
+msgid "Code"
+msgstr ""
+
+# @ activetab
+#: options.php:64
+msgid "Head code"
+msgstr ""
+
+# @ activetab
+#: options.php:65
+msgid "Code will be added to head section just before closing [head] tag"
+msgstr ""
+
+# @ activetab
+#: options.php:72
+msgid "Footer code"
+msgstr ""
+
+# @ activetab
+#: options.php:73
+msgid "Code will be added to body section just before closing [body] tag"
+msgstr ""
+
+# @ activetab
+#: options.php:81
+msgid "Other"
+msgstr ""
+
+# @ activetab
+#: options.php:86
+msgid "Excerpt"
+msgstr ""
+
+# @ activetab
+#: options.php:87
+msgid "Full content"
+msgstr ""
+
+# @ activetab
+#: options.php:90
+msgid "Show excerpt or full content in the list of posts"
+msgstr ""
+
+# @ activetab
+#: search.php:10
+msgid "Search results for:"
+msgstr "Suchergebnisse für:"
+
+# @ activetab
+#: searchform.php:6 searchform.php:7
+msgid "Search"
+msgstr "Suchen"
+
+# @ activetab
+#: sidebar.php:117
+msgid "Meta"
+msgstr ""
+
+# @ activetab
+#: template-part-nothing-found.php:4
+msgid "Nothing found"
+msgstr "Nichts gefunden"
+
+# @ activetab
+#: options-framework/options-framework.php:182
+#: options-framework/options-framework.php:183
+#: options-framework/options-framework.php:412
+msgid "Theme Options"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-framework.php:228
+msgid "Clear"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-framework.php:229
+msgid "Default"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-framework.php:230
+msgid "Select Color"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-framework.php:275
+msgid "Save options"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-framework.php:276
+msgid "Restore defaults"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-framework.php:276
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-framework.php:308
+msgid "Default options restored."
+msgstr ""
+
+# @ activetab
+#: options-framework/options-framework.php:362
+msgid "Options saved."
+msgstr ""
+
+# @ activetab
+#: options-framework/options-media-uploader.php:51
+msgid "No file chosen"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-media-uploader.php:54
+#: options-framework/options-media-uploader.php:113
+msgid "Upload"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-media-uploader.php:56
+#: options-framework/options-media-uploader.php:114
+msgid "Remove"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-media-uploader.php:59
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+# @ activetab
+#: options-framework/options-media-uploader.php:83
+msgid "View File"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:232
+msgid "No Repeat"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:233
+msgid "Repeat Horizontally"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:234
+msgid "Repeat Vertically"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:235
+msgid "Repeat All"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:248
+msgid "Top Left"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:249
+msgid "Top Center"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:250
+msgid "Top Right"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:251
+msgid "Middle Left"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:252
+msgid "Middle Center"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:253
+msgid "Middle Right"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:254
+msgid "Bottom Left"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:255
+msgid "Bottom Center"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:256
+msgid "Bottom Right"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:269
+msgid "Scroll Normally"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:270
+msgid "Fixed in Place"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:344
+msgid "Normal"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:345
+msgid "Italic"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:346
+msgid "Bold"
+msgstr ""
+
+# @ activetab
+#: options-framework/options-sanitize.php:347
+msgid "Bold Italic"
+msgstr ""
