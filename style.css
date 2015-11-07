@@ -2,10 +2,11 @@
 Theme Name: activetab
 Theme URI: http://web-profile.com.ua/wordpress/themes/activetab/
 Description: Responsive clean theme. More info at http://web-profile.com.ua/activetab/
-Version: 2.3
+Version: 2.4
 Author: webvitaly
 Author URI: http://web-profile.com.ua/wordpress/
 Tags: gray, white, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Text Domain: activetab
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 */
@@ -148,15 +149,7 @@ a img {
 }
 
 
-
-/* ========== selection colors ========== */
-::selection {background: #3297fd; color:#fff; text-shadow: none;}
-::-moz-selection {background: #3297fd; color:#fff; text-shadow: none;}
-img::selection {background: #3297fd;}
-img::-moz-selection	{background: #3297fd;}
-body {-webkit-tap-highlight-color: #3297fd;}
-
-
+/* ========== WordPress styles ========== */
 
 /* images */
 .alignleft {
