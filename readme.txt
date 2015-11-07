@@ -1,10 +1,8 @@
 === activetab ===
+Theme Name: activetab
+Theme URI: http://web-profile.com.ua/wordpress/themes/activetab/
 Contributors: webvitaly
 Donate link: http://web-profile.com.ua/donate/
-Tags: gray, white, light, one-column, two-columns, right-sidebar, flexible-width, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, clean
-Requires at least: 3.4
-Tested up to: 4.1
-Stable tag: 2.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -38,8 +36,10 @@ Responsive clean theme. More info at http://web-profile.com.ua/activetab/
 
 == Changelog ==
 
-= 2.4 - 2015-00-00 =
-* remove translation files
+= 2.4 - 2015-11-07 =
+* added Text Domain for translate.wordpress.org
+* removed translation files
+* minor cleanup
 
 = 2.3 - 2015-04-01 =
 * updated Bootstrap v.3.3.4
@@ -56,7 +56,7 @@ Responsive clean theme. More info at http://web-profile.com.ua/activetab/
 * added Bootstrap theme and *.map files
 * updated Font Awesome v.4.2.0
 * removed RSS icon image and used Font Awesome RSS icon instead
-* added ACTIVETAB_VERSION constant
+* added ACTIVETAB_THEME_VERSION constant
 
 = 1.6 - 2014-12-01 =
 * updated Bootstrap v.3.3.1

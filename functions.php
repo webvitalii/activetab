@@ -1,6 +1,7 @@
 <?php
 
-define('ACTIVETAB_VERSION', '2.3');
+define('ACTIVETAB_THEME_VERSION', '2.4');
+define('ACTIVETAB_VERSION', ACTIVETAB_THEME_VERSION); // for backward capability
 
 
 if ( ! isset( $content_width ) ) {
@@ -15,12 +16,12 @@ if ( ! function_exists( 'activetab_enqueue_scripts_and_styles' ) ) :
 			wp_enqueue_script( 'comment-reply' );
 		}
 
-		//wp_enqueue_script( 'activetab-bootstrap-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array( 'jquery' ), $activetab_version );
-		wp_enqueue_script( 'activetab-script', get_template_directory_uri() . '/js/activetab.js', array( 'jquery' ), ACTIVETAB_VERSION );
+		//wp_enqueue_script( 'activetab-bootstrap-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array( 'jquery' ), ACTIVETAB_THEME_VERSION );
+		wp_enqueue_script( 'activetab-script', get_template_directory_uri() . '/js/activetab.js', array( 'jquery' ), ACTIVETAB_THEME_VERSION );
 
-		wp_enqueue_style( 'activetab-bootstrap-style', get_template_directory_uri() . '/bootstrap/css/bootstrap.css', array(), ACTIVETAB_VERSION, 'all' );
-		wp_enqueue_style( 'activetab-bootstrap-theme-style', get_template_directory_uri() . '/bootstrap/css/bootstrap-theme.css', array(), ACTIVETAB_VERSION, 'all' );
-		wp_enqueue_style( 'activetab-style', get_stylesheet_uri(), array( 'activetab-bootstrap-style', 'dashicons' ), ACTIVETAB_VERSION, 'all' ); // get_stylesheet_directory_uri() . '/style.css'
+		wp_enqueue_style( 'activetab-bootstrap-style', get_template_directory_uri() . '/bootstrap/css/bootstrap.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
+		wp_enqueue_style( 'activetab-bootstrap-theme-style', get_template_directory_uri() . '/bootstrap/css/bootstrap-theme.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
+		wp_enqueue_style( 'activetab-style', get_stylesheet_uri(), array( 'activetab-bootstrap-style', 'dashicons' ), ACTIVETAB_THEME_VERSION, 'all' ); // get_stylesheet_directory_uri() . '/style.css'
 	}
 	add_action( 'wp_enqueue_scripts', 'activetab_enqueue_scripts_and_styles' );
 endif; // activetab_enqueue_scripts_and_styles()
