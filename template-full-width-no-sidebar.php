@@ -3,7 +3,7 @@
 Template Name: Full width (no sidebar)
 */
 
-?><?php get_header(); ?>
+get_header(); ?>
 
 <?php get_template_part( 'template-part', 'wrap-before' ); ?>
 
