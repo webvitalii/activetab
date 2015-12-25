@@ -377,6 +377,21 @@ if ( ! function_exists( 'activetab_wp_footer' ) ) :
 endif;
 
 
+if ( ! function_exists( 'activetab_rss_button' ) ) :
+	function activetab_rss_button() { // output content to the footer section
+		$output = '';
+		if ( is_category() ) {
+			$output = '<a href="'.get_category_feed_link( get_query_var( 'cat' ) ).'" class="rss-feed-link" title="'.esc_attr( __( 'Category RSS feed', 'activetab' ) ).'"><i class="dashicons dashicons-rss"></i></a>';
+		} elseif ( is_tag() ) {
+			$output = '<a href="'.get_tag_feed_link( get_query_var( 'tag_id' ) ).'" class="rss-feed-link" title="'.esc_attr( __( 'Tag RSS feed', 'activetab' ) ).'"><i class="dashicons dashicons-rss"></i></a>';
+		} elseif ( is_author() ) {
+			$output = '<a href="'.get_author_feed_link( get_the_author_meta( 'ID' ) ).'" class="rss-feed-link" title="'.esc_attr( __( 'Author RSS feed', 'activetab' ) ).'"><i class="dashicons dashicons-rss"></i></a>';
+		}
+		return $output;
+	}
+endif;
+
+
 // ========== options framework ==========
 
 /*

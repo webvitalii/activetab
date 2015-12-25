@@ -907,6 +907,9 @@ table#wp-calendar td, table#wp-calendar th {
 .rss-feed-link:hover {
 	color: #F3A96F;
 }
+.rss-feed-link i {
+	vertical-align: baseline;
+}
 
 /* ========== footer ========== */
 .site-footer {
