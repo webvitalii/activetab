@@ -36,8 +36,9 @@ Responsive clean theme. More info at http://web-profile.com.ua/activetab/
 == Changelog ==
 
 
-= 2.5 - 2015-12-13 =
+= 2.5 - 2015-12-26 =
 * removed sitemap template because it can be easily solved with Page-list plugin - https://wordpress.org/plugins/page-list/
+* removed archive templates because it can be easily solved with Extra-Shortcodes plugin - https://wordpress.org/plugins/extra-shortcodes/
 * removed favicon because now favicon can be set via WordPress Customizer
 
 = 2.4 - 2015-11-07 =
@@ -192,7 +193,7 @@ Responsive clean theme. More info at http://web-profile.com.ua/activetab/
 
 == Other Notes ==
 
-activetab theme, copyright 2015 web-profile.com.ua
+activetab theme, copyright 2016 web-profile.com.ua
 activetab theme is distributed under the terms of the GNU GPL
 
 
