@@ -5,7 +5,7 @@
 					<article class="post error-404 page-not-found">
 						<header class="entry-header page-header">
 							<h1 class="entry-title"><?php _e( 'Page not found. Error 404', 'activetab' ); ?></h1>
-						</header><!-- /.entry-header -->
+						</header><!-- .entry-header -->
 
 
 						<div class="entry-content">
@@ -58,8 +58,8 @@
 							<?php endif; ?>
 
 
-						</div><!-- /.entry-content -->
-					</article><!-- /#post-0 -->
+						</div><!-- .entry-content -->
+					</article><!-- #post-0 -->
 
 <?php get_template_part( 'template-part', 'wrap-after' ); ?>
 

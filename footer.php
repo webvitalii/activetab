@@ -1,8 +1,8 @@
 
 
-</div> <!-- /#main /.site-main -->
+</div><!-- #main .site-main -->
 
-</div> <!-- /.row -->
+</div><!-- .row -->
 
 
 <footer id="colophon" class="site-footer clearfix" role="contentinfo">
@@ -16,8 +16,8 @@
 					<!-- no widgets in footer -->
 				<?php endif; // end of the footer widgetized area ?>
 
-			</div> <!-- /.site-footer-left -->
-		</div> <!-- /.col-sm-8 -->
+			</div><!-- .site-footer-left -->
+		</div><!-- .col-sm-8 -->
 
 		<div class="col-sm-4">
 			<div class="site-footer-right text-right">
@@ -33,20 +33,20 @@
 				<a href="<?php echo esc_url( get_bloginfo( 'rss2_url' ) ); ?>" class="rss-feed-link" title="<?php echo esc_attr( __( 'Posts RSS feed', 'activetab' ) ); ?>"><i class="dashicons dashicons-rss"></i></a>
 				<a href="<?php echo esc_url( get_bloginfo( 'comments_rss2_url' ) ); ?>" class="rss-feed-link" title="<?php echo esc_attr( __( 'Comments RSS feed', 'activetab' ) ); ?>"><i class="dashicons dashicons-rss"></i></a>
 
-			</div> <!-- /.site-footer-right -->
-		</div> <!-- /.col-sm-4 -->
+			</div><!-- .site-footer-right -->
+		</div><!-- .col-sm-4 -->
 
-	</div> <!-- /.row -->
+	</div><!-- .row -->
 
 
-</footer> <!-- /#colophon /.site-footer -->
+</footer><!-- #colophon .site-footer -->
 
-</div> <!-- /.col-sm-12 -->
-</div> <!-- /.row -->
-</div> <!-- /.site-wrapper -->
-</div> <!-- /.container -->
+</div><!-- .col-sm-12 -->
+</div><!-- .row -->
+</div><!-- .site-wrapper -->
+</div><!-- .container -->
 
-</div> <!-- /#page /.hfeed -->
+</div><!-- #page .hfeed -->
 
 <?php wp_footer(); // wp_footer() should be just before the closing </body> tag, or many plugins will be broken  ?>
 

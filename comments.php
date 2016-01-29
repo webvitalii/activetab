@@ -41,7 +41,7 @@
 			endif;
 			?>
 		</ul>
-	</nav> <!-- /.site-comments-navigation -->
+	</nav><!-- .site-comments-navigation -->
 	<?php endif; ?>
 
 
@@ -62,7 +62,7 @@
 			endif;
 			?>
 		</ul>
-	</nav> <!-- /.site-comments-navigation -->
+	</nav><!-- .site-comments-navigation -->
 	<?php endif; ?>
 
 <?php endif; // end of if( have_comments() ) ?>
@@ -114,7 +114,7 @@
 		</div>
 
 		<?php endif; // if registration required and not logged in ?>
-	</section> <!-- /#respond -->
+	</section><!-- #respond -->
 
 <?php else: ?>
 
@@ -122,4 +122,4 @@
 
 <?php endif; // end of if( comments_open() ) ?>
 
-</div> <!-- /#comments /.comments-area -->
+</div><!-- #comments .comments-area -->

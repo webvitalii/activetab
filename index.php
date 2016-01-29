@@ -22,12 +22,12 @@
 					<article class="post no-results not-found">
 						<header class="entry-header page-header">
 							<h1 class="entry-title"><?php _e( 'No posts to display', 'activetab' ); ?></h1>
-						</header><!-- /.entry-header -->
+						</header><!-- .entry-header -->
 
 						<div class="entry-content">
 							<?php get_search_form(); ?>
-						</div><!-- /.entry-content -->
-					</article><!-- /#post-0 -->
+						</div><!-- .entry-content -->
+					</article><!-- #post-0 -->
 
 				<?php endif; ?>
 

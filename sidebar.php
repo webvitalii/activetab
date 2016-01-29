@@ -28,7 +28,7 @@
 								<?php echo $link_after; ?>
 							<?php endif; ?>
 
-						</header> <!-- /#masthead-sidebar /.site-sidebar-header -->
+						</header><!-- #masthead-sidebar .site-sidebar-header -->
 
 
 						<?php if ( ! dynamic_sidebar( 'sidebar' ) ) : // sidebar widgetized area ?>
@@ -123,5 +123,5 @@
 
 						<?php endif; // end of the sidebar widgetized area ?>
 
-					</div> <!-- /#secondary /.widget-area -->
-				</div> <!-- /.col-sm-4 -->
+					</div><!-- #secondary .widget-area -->
+				</div><!-- .col-sm-4 -->

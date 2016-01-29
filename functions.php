@@ -191,22 +191,22 @@ if ( ! function_exists( 'activetab_comments' ) ) :
 
 								edit_comment_link( '<span class="btn btn-default btn-xs"><i class="dashicons dashicons-edit"></i> '.__( 'Edit', 'activetab' ).'</span>', '<span class="edit-link comment-edit-link">', '</span>' );
 
-								echo '</div> <!-- /.comment-meta -->';
+								echo '</div><!-- .comment-meta -->';
 								?>
-							</div> <!-- /.comment-author /.vcard -->
+							</div><!-- .comment-author .vcard -->
 
 							<?php if ( $comment->comment_approved == '0' ) : ?>
 								<div class="alert alert-warning"><?php _e( 'Your comment is awaiting moderation.', 'activetab' ); ?></div>
 							<?php endif; ?>
 
-						</header><!-- /.comment-meta -->
+						</header><!-- .comment-meta -->
 
 						<div class="comment-content"><?php comment_text(); ?></div>
 
 						<div class="reply">
 							<?php comment_reply_link( array_merge( $args, array( 'reply_text' => '<span class="btn btn-default"><i class="dashicons dashicons-admin-comments"></i> '.__( 'Reply', 'activetab' ).'</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-						</div> <!-- /.reply -->
-					</article> <!-- /#comment-<?php comment_ID(); ?> -->
+						</div><!-- .reply -->
+					</article><!-- #comment-<?php comment_ID(); ?> -->
 
 				<?php
 				break;
@@ -291,7 +291,7 @@ if ( ! function_exists( 'activetab_post_meta' ) ) :
 			$post_meta .= '<div class="entry-meta-row">'."\n" . $post_tags . '</div>'."\n";
 		}
 
-		return "\n".'<div class="entry-meta">'."\n".$post_meta.'</div> <!-- /.entry-meta -->'."\n";
+		return "\n".'<div class="entry-meta">'."\n".$post_meta.'</div><!-- .entry-meta -->'."\n";
 	}
 endif;
 
@@ -310,7 +310,7 @@ if ( ! function_exists( 'activetab_nav' ) ) :
 			endif;
 		endif;
 		if ( ! empty( $nav ) ) { // do not show empty markup
-			$nav = "\n".'<nav class="site-posts-navigation site-comments-navigation-'.$class.'" role="navigation"><ul class="pager">'.$nav.'</ul></nav> <!-- /.site-posts-navigation -->'."\n";
+			$nav = "\n".'<nav class="site-posts-navigation site-comments-navigation-'.$class.'" role="navigation"><ul class="pager">'.$nav.'</ul></nav><!-- .site-posts-navigation -->'."\n";
 		}
 		return $nav;
 	}

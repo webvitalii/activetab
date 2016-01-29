@@ -8,7 +8,7 @@
 		<?php if ( 'post' == get_post_type() ) : // hide meta text for pages ?>
 			<?php echo activetab_post_meta(); ?>
 		<?php endif; ?>
-	</header> <!-- /.entry-header -->
+	</header><!-- .entry-header -->
 
 	<?php get_template_part( 'template-part', 'thumbnail-list' ); ?>
 
@@ -21,6 +21,6 @@
 			the_content( '' );
 		}
 		?>
-	</section> <!-- /.entry-content -->
+	</section><!-- .entry-content -->
 
-</article> <!-- /#post-<?php the_ID(); ?> -->
+</article><!-- #post-<?php the_ID(); ?> -->

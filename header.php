@@ -44,10 +44,10 @@ if( $menu_position_type == 'fixed' ) {
 			'fallback_cb' => 'activetab_list_pages'
 		) );
 		?>
-		</nav> <!-- /.site-navigation /.main-navigation -->
-	</div> <!-- /.container /.site-container -->
+		</nav><!-- .site-navigation .main-navigation -->
+	</div><!-- .container .site-container -->
 
-</div> <!-- /.container /.site-container -->
+</div><!-- .container .site-container -->
 
 <?php if( $menu_position_type == 'fixed' ) : ?>
 <div class="site-content-pusher"><!-- push content because of fixed menu --></div>

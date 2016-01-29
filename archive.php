@@ -19,7 +19,7 @@
 						}
 						?>
 
-					</header> <!-- /.entry-header /.page-header -->
+					</header><!-- .entry-header .page-header -->
 
 
 					<?php echo activetab_nav(); ?>

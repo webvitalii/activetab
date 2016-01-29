@@ -23,7 +23,7 @@ if ( ! empty( $logo_url ) || ! empty( $show_site_title ) || ! empty( $show_site_
 			<?php if ( ! empty( $logo_url ) ) : ?>
 				<div class="site-logo">
 					<?php echo $link_before; ?><img src="<?php echo $logo_url; ?>" alt="<?php echo $title_desc; ?>"><?php echo $link_after; ?>
-				</div> <!-- /.site-logo -->
+				</div><!-- .site-logo -->
 			<?php endif; ?>
 
 			<div class="site-title-description">
@@ -36,8 +36,8 @@ if ( ! empty( $logo_url ) || ! empty( $show_site_title ) || ! empty( $show_site_
 				<h4 class="site-description muted"><?php bloginfo( 'description' ); ?></h4>
 				<?php endif; ?>
 			<?php endif; ?>
-			</div> <!-- /.site-title-description -->
+			</div><!-- .site-title-description -->
 
-		</div> <!-- /.site-logo-title -->
-	</header> <!-- /#masthead /.site-header -->
+		</div><!-- .site-logo-title -->
+	</header><!-- #masthead .site-header -->
 <?php endif; ?>

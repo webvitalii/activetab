@@ -1,4 +1,4 @@
 
-					</div> <!-- /#content -->
-				</div> <!-- /#primary -->
-			</div> <!-- /.span /.clearfix -->
+					</div><!-- #content -->
+				</div><!-- #primary -->
+			</div><!-- .span .clearfix -->

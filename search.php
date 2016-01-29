@@ -13,7 +13,7 @@
 
 			<?php get_search_form(); ?>
 
-		</header> <!-- /.entry-header /.page-header -->
+		</header><!-- .entry-header .page-header -->
 
 		<?php echo activetab_nav(); ?>
 

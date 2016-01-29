@@ -24,9 +24,9 @@
 											get_the_title( $post->post_parent )
 										);
 										?>
-									</div><!-- /.entry-meta -->
+									</div><!-- .entry-meta -->
 
-								</header><!-- /.entry-header -->
+								</header><!-- .entry-header -->
 
 								<div class="entry-content">
 
@@ -67,22 +67,22 @@
 											<a href="<?php echo $next_attachment_url; ?>" title="<?php echo esc_attr( get_the_title() ); ?>"><?php
 												echo wp_get_attachment_image( $post->ID, array( 1200, 1200 ) );
 												?></a>
-										</div><!-- /.attachment -->
+										</div><!-- .attachment -->
 
 										<?php if ( ! empty( $post->post_excerpt ) ) : ?>
 											<div class="entry-caption">
 												<?php the_excerpt(); ?>
-											</div><!-- /.entry-caption -->
+											</div><!-- .entry-caption -->
 										<?php endif; ?>
-									</div><!-- /.entry-attachment -->
+									</div><!-- .entry-attachment -->
 
 									<?php the_content(); ?>
 									<?php wp_link_pages( array( 'before' => '<div class="wp_link_pages clearfix"><span class="wp_link_pages-item-empty">' . __( 'Pages:', 'activetab' ).'</span>', 'after' => '</div>', 'link_before' => '<span class="wp_link_pages-item">', 'link_after' => '</span>', 'pagelink' => '%' ) ); ?>
 
-								</div><!-- /.entry-content -->
+								</div><!-- .entry-content -->
 
 
-							</article><!-- /#post-<?php the_ID(); ?> -->
+							</article><!-- #post-<?php the_ID(); ?> -->
 
 
 					<?php endwhile; // end of the loop ?>
