@@ -205,7 +205,6 @@ activetab theme is distributed under the terms of the GNU GPL
 = Bundled Resources: =
 
 * [Bootstrap](http://getbootstrap.com/) licensed under [MIT](http://opensource.org/licenses/MIT)
-* [Options Framework](http://wptheming.com/options-framework-theme/) licensed under [GPL](https://github.com/devinsays/options-framework-theme/blob/master/license.txt)
 * [Pixabay](http://pixabay.com/) public domain images
 * [Dashicons](https://developer.wordpress.org/resource/dashicons/) licensed under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
 
@@ -216,4 +215,3 @@ activetab theme is distributed under the terms of the GNU GPL
 * http://pixabay.com/en/beach-beautiful-blue-coast-84560/
 * http://pixabay.com/en/solar-flare-flare-explosion-67532/
 * http://pixabay.com/en/baby-boy-child-childhood-computer-84626/
-* http://pixabay.com/en/lion-head-mane-black-silhouette-308089/
