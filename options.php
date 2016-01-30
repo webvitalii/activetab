@@ -38,22 +38,6 @@ function optionsframework_options() {
 		'type' => 'upload'
 	);
 
-	$options[] = array(
-		'name' => __( 'Show site title in the header', 'activetab' ),
-		'desc' => sprintf( __( '<a href="%s">Edit site title</a>', 'activetab' ), admin_url( 'options-general.php' ) ),
-		'id' => 'show_site_title',
-		'std' => '1',
-		'type' => 'checkbox'
-	);
-
-	$options[] = array(
-		'name' => __( 'Show site description in the header', 'activetab' ),
-		'desc' => sprintf( __( '<a href="%s">Edit site description</a>', 'activetab' ), admin_url( 'options-general.php' ) ),
-		'id' => 'show_site_description',
-		'std' => '1',
-		'type' => 'checkbox'
-	);
-
 
 	$options[] = array(
 		'name' => __( 'Code', 'activetab' ),
