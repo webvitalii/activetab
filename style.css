@@ -792,6 +792,12 @@ body.admin-bar .navbar-fixed-top { /* move menu below admin-bar */
 
 
 /* ========== site-header ========== */
+.site-header {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
 .site-sidebar-header {
 	margin: 0 0 30px 0;
 }
@@ -803,25 +809,6 @@ body.admin-bar .navbar-fixed-top { /* move menu below admin-bar */
 .site-sidebar-header a:hover img {
 	opacity: 0.8;
 }
-.site-logo-title {
-	border-bottom: 1px solid #ddd;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-}
-.site-logo {
-	float: left;
-	margin: 0 30px 0 0;
-}
-.site-logo img {
-	max-width: 250px;
-	max-height: 200px;
-}
-.site-logo a img {
-	padding: 0;
-	border: 0;
-}
-.site-title {}
-.site-title h3 {}
 
 
 /* ========== sidebar ========== */
