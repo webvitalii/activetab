@@ -2,7 +2,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
 	<header class="entry-header page-header">
-
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<?php echo activetab_post_meta(); ?>

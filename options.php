@@ -60,24 +60,5 @@ function optionsframework_options() {
 		'type' => 'textarea'
 	);
 
-
-	$options[] = array(
-		'name' => __( 'Other', 'activetab' ),
-		'type' => 'heading'
-	);
-
-	$content_preview_types_array = array(
-		'excerpt' => __( 'Excerpt', 'activetab' ),
-		'content' => __( 'Full content', 'activetab' )
-	);
-
-	$options[] = array( 'name' => __( 'Show excerpt or full content in the list of posts', 'activetab' ),
-		//'desc' => __( '', 'activetab' ),
-		'id' => 'excerpt_or_full_content_in_list',
-		'std' => 'excerpt',
-		'type' => 'radio',
-		'options' => $content_preview_types_array
-	);
-
 	return $options;
 }
