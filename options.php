@@ -18,19 +18,6 @@ function optionsframework_options() {
 		'type' => 'heading'
 	);
 
-	$menu_position_types_array = array(
-		'fixed' => __( 'Fixed', 'activetab' ),
-		'static' => __( 'Static', 'activetab' )
-	);
-
-	$options[] = array( 'name' => __( 'Menu position type', 'activetab' ),
-		//'desc' => __( '', 'activetab' ),
-		'id' => 'menu_position_type',
-		'std' => 'fixed',
-		'type' => 'radio',
-		'options' => $menu_position_types_array
-	);
-
 	$options[] = array(
 		'name' => __( 'Logo', 'activetab' ),
 		//'desc' => __( '', 'activetab' ),

@@ -21,16 +21,7 @@
 
 <div id="page" class="hfeed site">
 
-<?php
-$menu_position_type = of_get_option( 'menu_position_type', 'fixed' );
-if( $menu_position_type == 'fixed' ) {
-	$menu_position_class = 'navbar-fixed-top';
-} else { // static
-	$menu_position_class = 'navbar-static-top';
-}
-?>
-
-<div class="navbar navbar-inverse <?php echo $menu_position_class; ?>">
+<div class="navbar navbar-inverse navbar-fixed-top">
 
 	<div class="container site-container">
 		<nav class="site-navigation main-navigation" role="navigation">
@@ -49,11 +40,7 @@ if( $menu_position_type == 'fixed' ) {
 
 </div><!-- .container .site-container -->
 
-<?php if( $menu_position_type == 'fixed' ) : ?>
 <div class="site-content-pusher"><!-- push content because of fixed menu --></div>
-<?php endif; ?>
-
-
 
 
 <div class="container site-container">
