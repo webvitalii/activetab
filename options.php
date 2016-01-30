@@ -39,26 +39,5 @@ function optionsframework_options() {
 	);
 
 
-	$options[] = array(
-		'name' => __( 'Code', 'activetab' ),
-		'type' => 'heading'
-	);
-
-	$options[] = array(
-		'name' => __( 'Head code', 'activetab' ),
-		'desc' => __( 'Code will be added to head section just before closing [head] tag', 'activetab' ),
-		'id' => 'code_head',
-		'std' => '',
-		'type' => 'textarea'
-	);
-
-	$options[] = array(
-		'name' => __( 'Footer code', 'activetab' ),
-		'desc' => __( 'Code will be added to body section just before closing [body] tag', 'activetab' ),
-		'id' => 'code_footer',
-		'std' => '',
-		'type' => 'textarea'
-	);
-
 	return $options;
 }
