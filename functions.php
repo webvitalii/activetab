@@ -1,6 +1,6 @@
 <?php
 
-define('ACTIVETAB_THEME_VERSION', '2.5');
+define('ACTIVETAB_THEME_VERSION', '2.6');
 
 
 if ( ! isset( $content_width ) ) {

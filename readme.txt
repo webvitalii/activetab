@@ -35,6 +35,9 @@ Responsive clean theme. More info at http://web-profile.com.ua/activetab/
 
 == Changelog ==
 
+= 2.6 - 2016-01-30 =
+* remove theme options
+* drop support for old IE versions
 
 = 2.5 - 2016-01-30 =
 * removed sitemap template because it can be easily solved with Page-list plugin - https://wordpress.org/plugins/page-list/
