@@ -36,10 +36,12 @@ Responsive clean theme. More info at http://web-profile.com.ua/activetab/
 == Changelog ==
 
 
-= 2.5 - 2015-12-26 =
+= 2.5 - 2016-01-30 =
 * removed sitemap template because it can be easily solved with Page-list plugin - https://wordpress.org/plugins/page-list/
 * removed archive templates because it can be easily solved with Extra-Shortcodes plugin - https://wordpress.org/plugins/extra-shortcodes/
 * removed favicon because now favicon can be set via WordPress Customizer
+* updated Bootstrap v.3.3.6
+* code refactoring
 
 = 2.4 - 2015-11-07 =
 * added Text Domain for translate.wordpress.org
