@@ -3,6 +3,11 @@
 define('ACTIVETAB_THEME_VERSION', '2.6');
 
 
+include( 'inc/activetab-functions.php' );
+
+include( 'inc/activetab-settings.php' );
+
+
 if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
@@ -363,3 +368,34 @@ if ( ! function_exists( 'activetab_rss_button' ) ) :
 	}
 endif;
 
+
+if ( ! function_exists( 'activetab_wp_head' ) ) :
+	function activetab_wp_head() { // output content to the head section
+
+		$settings = activetab_get_settings();
+		$code_head = $settings['code_head'];
+		if ( ! empty( $code_head ) ) {
+			echo "\n".'<!-- activetab head code -->'."\n";
+			echo $code_head;
+			echo "\n".'<!-- end of activetab head code -->'."\n";
+		}
+
+	}
+	add_action( 'wp_head', 'activetab_wp_head' );
+endif;
+
+
+if ( ! function_exists( 'activetab_wp_footer' ) ) :
+	function activetab_wp_footer() { // output content to the footer section
+
+		$settings = activetab_get_settings();
+		$code_footer = $settings['code_footer'];
+		if ( ! empty( $code_footer ) ) {
+			echo "\n".'<!-- activetab footer code -->'."\n";
+			echo $code_footer;
+			echo "\n".'<!-- end of activetab footer code -->'."\n";
+		}
+
+	}
+	add_action( 'wp_footer', 'activetab_wp_footer' );
+endif;
