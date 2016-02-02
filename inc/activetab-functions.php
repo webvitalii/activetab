@@ -19,6 +19,6 @@ function activetab_default_settings() {
 function activetab_get_settings() {
 	$activetab_settings = (array) get_option('activetab_settings');
 	$default_settings = activetab_default_settings();
-	$activetab_settings = array_merge($default_settings, $activetab_settings); // set empty options with default values
+	$activetab_settings = array_merge($default_settings, $activetab_settings); // use default settings if custom settings are empty
 	return $activetab_settings;
 }

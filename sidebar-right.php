@@ -2,7 +2,7 @@
 				<div class="col-sm-3">
 					<div class="widget-area widget-area-right" role="complementary">
 
-						<header id="masthead-sidebar" class="site-sidebar-header clearfix" role="banner">
+						<header class="site-sidebar-header clearfix" role="banner">
 
 							<?php
 
@@ -27,7 +27,7 @@
 								<?php echo $link_after; ?>
 							<?php endif; ?>
 
-						</header><!-- #masthead-sidebar .site-sidebar-header -->
+						</header><!-- .site-sidebar-header -->
 
 
 						<?php if ( ! dynamic_sidebar( 'sidebar_right' ) ) : // sidebar widgetized area ?>
