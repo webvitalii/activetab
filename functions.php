@@ -112,9 +112,18 @@ endif;
 if ( ! function_exists( 'activetab_register_widgets' ) ) :
 	function activetab_register_widgets() {
 		register_sidebar( array(
-			'name' => __( 'Sidebar', 'activetab' ),
-			'id' => 'sidebar',
-			//'description' => 'Sidebar widgets description.',
+			'name' => __( 'Sidebar Left', 'activetab' ),
+			'id' => 'sidebar_left',
+			//'description' => 'Sidebar Left.',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h4 class="widget-title">',
+			'after_title' => '</h4>',
+		) );
+		register_sidebar( array(
+			'name' => __( 'Sidebar Right', 'activetab' ),
+			'id' => 'sidebar_right',
+			//'description' => 'Sidebar Right.',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h4 class="widget-title">',

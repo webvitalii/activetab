@@ -1,6 +1,16 @@
+<?php
+// global $wp_query;
+// $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
+$col_class = 'col-sm-8';
+if( is_page_template ( 'template-full-width-no-sidebar.php' ) ){ // show wide column if sidebar is removed
+	$col_class = 'col-sm-12 full-width-wrap';
+}
+?>
+			<div class="<?php echo $col_class; ?> clearfix">
+
+
 
 <?php
-
 if ( activetab_is_homepage() ) {
 	$link_before = '';
 	$link_after = '';
@@ -19,3 +29,9 @@ if ( activetab_is_homepage() ) {
 		<?php endif; ?>
 
 	</header><!-- #masthead .site-header -->
+
+			
+
+				<div id="primary" class="content-area">
+					<div id="content" class="site-content" role="main">
+

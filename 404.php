@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part( 'template-part', 'wrap-before' ); ?>
+<?php get_template_part( 'template-parts/wrap', 'before' ); ?>
 
 					<article class="post error-404 page-not-found">
 						<header class="entry-header page-header">
@@ -61,8 +61,8 @@
 						</div><!-- .entry-content -->
 					</article><!-- #post-0 -->
 
-<?php get_template_part( 'template-part', 'wrap-after' ); ?>
+<?php get_template_part( 'template-parts/wrap', 'after' ); ?>
 
-<?php get_sidebar(); ?>
+<?php get_sidebar( 'after-content' ); ?>
 
 <?php get_footer(); ?>

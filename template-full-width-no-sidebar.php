@@ -5,7 +5,7 @@ Template Name: Full width (no sidebar)
 
 get_header(); ?>
 
-<?php get_template_part( 'template-part', 'wrap-before' ); ?>
+<?php get_template_part( 'template-parts/wrap', 'before' ); ?>
 
 	<?php while ( have_posts() ) : the_post(); // the loop ?>
 
@@ -15,6 +15,6 @@ get_header(); ?>
 
 	<?php endwhile; // end of the loop ?>
 
-<?php get_template_part( 'template-part', 'wrap-after' ); ?>
+<?php get_template_part( 'template-parts/wrap', 'after' ); ?>
 
 <?php get_footer(); ?>
