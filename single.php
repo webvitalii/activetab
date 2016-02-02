@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php get_sidebar( 'before-content' ); ?>
+
 <?php get_template_part( 'template-parts/wrap', 'before' ); ?>
 
 	<?php while ( have_posts() ) : the_post(); // the loop ?>

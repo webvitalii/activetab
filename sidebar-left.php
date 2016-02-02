@@ -1,5 +1,5 @@
 
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="widget-area widget-area-left" role="complementary">
 
 						<?php if ( ! dynamic_sidebar( 'sidebar_left' ) ) : // sidebar widgetized area ?>
@@ -95,4 +95,4 @@
 						<?php endif; // end of the sidebar widgetized area ?>
 
 					</div><!-- .widget-area .widget-area-left -->
-				</div><!-- .col-sm-4 -->
+				</div><!-- .col-sm-3 -->

@@ -73,7 +73,7 @@ function activetab_field_layout_callback() {
 		}
 		echo '<p><label><input type="radio" name="activetab_settings[layout]" value="'.$key.'"  '.$checked.'> '.$value.'<label></p>'."\n";
 	endforeach;
-	echo '<p class="description">General layout settings. Can be rewritten in page or post settings.</p>';
+	echo '<p class="description">General layout settings.</p>';
 }
 
 

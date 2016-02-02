@@ -1,5 +1,5 @@
 
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="widget-area widget-area-right" role="complementary">
 
 						<header id="masthead-sidebar" class="site-sidebar-header clearfix" role="banner">
@@ -123,4 +123,4 @@
 						<?php endif; // end of the sidebar widgetized area ?>
 
 					</div><!-- .widget-area .widget-area-right -->
-				</div><!-- .col-sm-4 -->
+				</div><!-- .col-sm-3 -->
