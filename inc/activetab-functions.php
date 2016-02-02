@@ -7,6 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) { // prevent full path disclosure
 
 function activetab_default_settings() {
 	$settings = array(
+		'layout' => 'content-sidebar',
 		'code_head' => '',
 		'code_footer' => ''
 	);
