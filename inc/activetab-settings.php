@@ -21,6 +21,7 @@ function activetab_admin_init() {
 
 	add_settings_section('activetab_settings_general_section', '', 'activetab_section_callback', 'activetab_general_page');
 	
+	add_settings_field('max_width', 'Maximum width of the website', 'activetab_field_max_width_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	add_settings_field('layout', 'Layout', 'activetab_field_layout_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	add_settings_field('code_head', 'Code head', 'activetab_field_code_head_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	add_settings_field('code_footer', 'Code footer', 'activetab_field_code_footer_callback', 'activetab_general_page', 'activetab_settings_general_section');
@@ -40,6 +41,7 @@ add_action('admin_init', 'activetab_settings_init');
 function activetab_settings_validate($input) {
 	$default_settings = activetab_get_settings();
 	
+	$output['max_width'] = trim($input['max_width']);
 	$output['layout'] = trim($input['layout']);
 	$output['code_head'] = trim($input['code_head']);
 	$output['code_footer'] = trim($input['code_footer']);
@@ -50,6 +52,14 @@ function activetab_settings_validate($input) {
 
 function activetab_section_callback() { // Activetab settings description
 	echo '';
+}
+
+
+function activetab_field_max_width_callback() {
+	$settings = activetab_get_settings();
+	$default_settings = activetab_default_settings();
+	echo '<input type="number" name="activetab_settings[max_width]" class="regular-text" value="'.$settings['max_width'].'" required="required" />';
+	echo '<p class="description">Default: '.$default_settings['max_width'].'</p>';
 }
 
 

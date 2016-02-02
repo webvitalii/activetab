@@ -383,10 +383,22 @@ if ( ! function_exists( 'activetab_wp_head' ) ) :
 
 		$settings = activetab_get_settings();
 		$code_head = $settings['code_head'];
+		$max_width = $settings['max_width'];
+		
+		if ( ! empty( $max_width ) ) {
+			echo "\n".'<!-- Activetab settings -->'."\n";
+			echo '<style type="text/css">'."\n";
+			echo '.site-container {'."\n";
+			echo '	max-width: '.$max_width.'px;'."\n";
+			echo '}'."\n";
+			echo '</style>'."\n";
+			echo "\n".'<!-- end of Activetab settings -->'."\n";
+		}
+		
 		if ( ! empty( $code_head ) ) {
-			echo "\n".'<!-- activetab head code -->'."\n";
+			echo "\n".'<!-- Activetab head code -->'."\n";
 			echo $code_head;
-			echo "\n".'<!-- end of activetab head code -->'."\n";
+			echo "\n".'<!-- end of Activetab head code -->'."\n";
 		}
 
 	}
@@ -400,9 +412,9 @@ if ( ! function_exists( 'activetab_wp_footer' ) ) :
 		$settings = activetab_get_settings();
 		$code_footer = $settings['code_footer'];
 		if ( ! empty( $code_footer ) ) {
-			echo "\n".'<!-- activetab footer code -->'."\n";
+			echo "\n".'<!-- Activetab footer code -->'."\n";
 			echo $code_footer;
-			echo "\n".'<!-- end of activetab footer code -->'."\n";
+			echo "\n".'<!-- end of Activetab footer code -->'."\n";
 		}
 
 	}

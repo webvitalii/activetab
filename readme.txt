@@ -35,9 +35,13 @@ Responsive clean theme. More info at http://web-profile.com.ua/activetab/
 
 == Changelog ==
 
-= 2.6 - 2016-01-30 =
-* remove theme options
+= 2.6 - 2016-02-02 =
+* removed Options Framework
+* added Settings via Settings API
+* added settings for max width, layout, head code, footer code
+* added support for 1-col, 2-cols and 3-cols layouts
 * drop support for old IE versions
+* renamed 'activetab' to 'Activetab'
 
 = 2.5 - 2016-01-30 =
 * removed sitemap template because it can be easily solved with Page-list plugin - https://wordpress.org/plugins/page-list/

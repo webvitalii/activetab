@@ -26,11 +26,10 @@ body {
 	margin-right: auto;
 	padding: 20px 20px;
 	background: #fff;
-	/*border: 1px solid #e6e6e6;*/
 }
 
 .site-container {
-	max-width: 1000px; /* site width */
+	max-width: 1200px; /* site width */
 }
 
 
