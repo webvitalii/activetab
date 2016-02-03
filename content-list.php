@@ -12,7 +12,17 @@
 	<?php get_template_part( 'template-part', 'thumbnail-list' ); ?>
 
 	<section class="entry-content entry-summary">
-		<?php the_excerpt( '' ); ?>
+
+		<?php
+		$settings = activetab_get_settings();
+		$excerpt_or_content_in_list = $settings['excerpt_or_content_in_list'];
+		if( $excerpt_or_content_in_list == 'excerpt' ) {
+			the_excerpt( '' );
+		} else {
+			the_content( '' );
+		}
+		?>
+
 	</section><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

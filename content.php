@@ -12,7 +12,16 @@
 	<?php get_template_part( 'template-part', 'thumbnail-list' ); ?>
 
 	<section class="entry-content">
-		<?php the_excerpt( '' ); ?>
+
+		<?php
+		$settings = activetab_get_settings();
+		$excerpt_or_content_in_list = $settings['excerpt_or_content_in_list'];
+		if( $excerpt_or_content_in_list == 'excerpt' ) {
+			the_excerpt( '' );
+		} else {
+			the_content( '' );
+		}
+		?>
 
 		<?php //wp_link_pages( array( 'before' => '<div class="wp_link_pages clearfix"><span class="wp_link_pages-item-empty">' . __( 'Pages:', 'activetab' ).'</span>', 'after' => '</div>', 'link_before' => '<span class="wp_link_pages-item">', 'link_after' => '</span>', 'pagelink' => '%' ) ); ?>
 	</section><!-- .entry-content -->

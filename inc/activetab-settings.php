@@ -23,6 +23,7 @@ function activetab_admin_init() {
 	
 	add_settings_field('max_width', 'Maximum width of the website', 'activetab_field_max_width_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	add_settings_field('layout', 'Layout', 'activetab_field_layout_callback', 'activetab_general_page', 'activetab_settings_general_section');
+	add_settings_field('excerpt_or_content_in_list', 'Show excerpt or content in the list', 'activetab_field_excerpt_or_content_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	add_settings_field('code_head', 'Code head', 'activetab_field_code_head_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	add_settings_field('code_footer', 'Code footer', 'activetab_field_code_footer_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	
@@ -43,6 +44,7 @@ function activetab_settings_validate($input) {
 	
 	$output['max_width'] = trim($input['max_width']);
 	$output['layout'] = trim($input['layout']);
+	$output['excerpt_or_content_in_list'] = trim($input['excerpt_or_content_in_list']);
 	$output['code_head'] = trim($input['code_head']);
 	$output['code_footer'] = trim($input['code_footer']);
 
@@ -84,6 +86,26 @@ function activetab_field_layout_callback() {
 		echo '<p><label><input type="radio" name="activetab_settings[layout]" value="'.$key.'"  '.$checked.'> '.$value.'<label></p>'."\n";
 	endforeach;
 	echo '<p class="description">General layout settings.</p>';
+}
+
+
+function activetab_field_excerpt_or_content_callback() {
+	$settings = activetab_get_settings();
+	$default_settings = activetab_default_settings();
+	
+	$options = array(
+		'excerpt' => 'Excerpt',
+		'content' => 'Content'
+	);
+	
+	foreach ( $options as $key => $value ):
+		$checked = '';
+		if ( $settings['excerpt_or_content_in_list'] == $key ) {
+			$checked = ' checked="checked"';
+		}
+		echo '<p><label><input type="radio" name="activetab_settings[excerpt_or_content_in_list]" value="'.$key.'"  '.$checked.'> '.$value.'<label></p>'."\n";
+	endforeach;
+	echo '<p class="description"></p>';
 }
 
 
