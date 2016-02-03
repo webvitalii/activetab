@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) { // prevent full path disclosure
 
 
 function activetab_menu() { // add menu item
-	add_theme_page('Activetab Settings', 'Activetab Settings', 'manage_options', 'activetab', 'activetab_settings');
+	add_theme_page(__( 'Activetab Settings', 'activetab' ), __( 'Activetab Settings', 'activetab' ), 'manage_options', 'activetab', 'activetab_settings');
 }
 add_action('admin_menu', 'activetab_menu');
 
@@ -21,11 +21,11 @@ function activetab_admin_init() {
 
 	add_settings_section('activetab_settings_general_section', '', 'activetab_section_callback', 'activetab_general_page');
 	
-	add_settings_field('max_width', 'Maximum width of the website', 'activetab_field_max_width_callback', 'activetab_general_page', 'activetab_settings_general_section');
-	add_settings_field('layout', 'Layout', 'activetab_field_layout_callback', 'activetab_general_page', 'activetab_settings_general_section');
-	add_settings_field('excerpt_or_content_in_list', 'Show excerpt or content in the list', 'activetab_field_excerpt_or_content_callback', 'activetab_general_page', 'activetab_settings_general_section');
-	add_settings_field('code_head', 'Code head', 'activetab_field_code_head_callback', 'activetab_general_page', 'activetab_settings_general_section');
-	add_settings_field('code_footer', 'Code footer', 'activetab_field_code_footer_callback', 'activetab_general_page', 'activetab_settings_general_section');
+	add_settings_field('max_width', __( 'Maximum width of the website', 'activetab' ), 'activetab_field_max_width_callback', 'activetab_general_page', 'activetab_settings_general_section');
+	add_settings_field('layout', __( 'Layout', 'activetab' ), 'activetab_field_layout_callback', 'activetab_general_page', 'activetab_settings_general_section');
+	add_settings_field('excerpt_or_content_in_list', __( 'Show excerpt or content in the list', 'activetab' ), 'activetab_field_excerpt_or_content_callback', 'activetab_general_page', 'activetab_settings_general_section');
+	add_settings_field('code_head', __( 'Head code', 'activetab' ), 'activetab_field_code_head_callback', 'activetab_general_page', 'activetab_settings_general_section');
+	add_settings_field('code_footer', __( 'Footer code', 'activetab' ), 'activetab_field_code_footer_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	
 }
 add_action('admin_init', 'activetab_admin_init');
@@ -61,7 +61,9 @@ function activetab_field_max_width_callback() {
 	$settings = activetab_get_settings();
 	$default_settings = activetab_default_settings();
 	echo '<input type="number" name="activetab_settings[max_width]" class="regular-text" value="'.$settings['max_width'].'" required="required" />';
-	echo '<p class="description">Default: '.$default_settings['max_width'].'</p>';
+	echo '<p class="description">';
+	printf( __( 'Default: %s', 'activetab' ), $default_settings['max_width'] );
+	echo '</p>';
 }
 
 
@@ -70,12 +72,12 @@ function activetab_field_layout_callback() {
 	$default_settings = activetab_default_settings();
 	
 	$options = array(
-		'content-sidebar' => 'content / sidebar-right',
-		'sidebar-content' => 'sidebar-left / content',
-		'content' => 'content (full width, no sidebars)',
-		'content-sidebar-sidebar' => 'content / sidebar-left / sidebar-right',
-		'sidebar-content-sidebar' => 'sidebar-left / content / sidebar-right',
-		'sidebar-sidebar-content' => 'sidebar-left / sidebar-right / content'
+		'content-sidebar' => __( 'content / sidebar-right', 'activetab' ),
+		'sidebar-content' => __( 'sidebar-left / content', 'activetab' ),
+		'content' => __( 'content (full width, no sidebars)', 'activetab' ),
+		'content-sidebar-sidebar' => __( 'content / sidebar-left / sidebar-right', 'activetab' ),
+		'sidebar-content-sidebar' => __( 'sidebar-left / content / sidebar-right', 'activetab' ),
+		'sidebar-sidebar-content' => __( 'sidebar-left / sidebar-right / content', 'activetab' )
 	);
 	
 	foreach ( $options as $key => $value ):
@@ -85,7 +87,7 @@ function activetab_field_layout_callback() {
 		}
 		echo '<p><label><input type="radio" name="activetab_settings[layout]" value="'.$key.'"  '.$checked.'> '.$value.'<label></p>'."\n";
 	endforeach;
-	echo '<p class="description">General layout settings.</p>';
+	echo '<p class="description">'.__( 'General layout settings', 'activetab' ).'</p>';
 }
 
 
@@ -94,8 +96,8 @@ function activetab_field_excerpt_or_content_callback() {
 	$default_settings = activetab_default_settings();
 	
 	$options = array(
-		'excerpt' => 'Excerpt',
-		'content' => 'Content'
+		'excerpt' => __( 'Excerpt', 'activetab' ),
+		'content' => __( 'Full content', 'activetab' )
 	);
 	
 	foreach ( $options as $key => $value ):
@@ -105,7 +107,7 @@ function activetab_field_excerpt_or_content_callback() {
 		}
 		echo '<p><label><input type="radio" name="activetab_settings[excerpt_or_content_in_list]" value="'.$key.'"  '.$checked.'> '.$value.'<label></p>'."\n";
 	endforeach;
-	echo '<p class="description"></p>';
+	echo '<p class="description">'.__( 'Show excerpt or full content in the list of posts', 'activetab' ).'</p>';
 }
 
 
@@ -113,7 +115,7 @@ function activetab_field_code_head_callback() {
 	$settings = activetab_get_settings();
 	$default_settings = activetab_default_settings();
 	echo '<textarea name="activetab_settings[code_head]" class="large-text" style="width: 25em; height: 100px;">'.$settings['code_head'].'</textarea>';
-	echo '<p class="description">Code will be added to head section via wp_head() function.</p>';
+	echo '<p class="description">'.__( 'Code will be added to head section just before closing [head] tag', 'activetab' ).'</p>';
 }
 
 
@@ -121,7 +123,7 @@ function activetab_field_code_footer_callback() {
 	$settings = activetab_get_settings();
 	$default_settings = activetab_default_settings();
 	echo '<textarea name="activetab_settings[code_footer]" class="large-text" style="width: 25em; height: 100px;">'.$settings['code_footer'].'</textarea>';
-	echo '<p class="description">Code will be added to footer section via wp_footer() function.</p>';
+	echo '<p class="description">'.__( 'Code will be added to body section just before closing [body] tag', 'activetab' ).'</p>';
 }
 
 
@@ -130,7 +132,8 @@ function activetab_settings() {
 	?>
 	<div class="wrap">
 		
-		<h2><span class="dashicons dashicons-admin-generic" style="position: relative; top: 4px;"></span> Activetab Theme Settings</h2>
+		<h2><span class="dashicons dashicons-admin-generic" style="position: relative; top: 4px;"></span> 
+			<?php echo __( 'Activetab Settings', 'activetab' ); ?></h2>
 		
 		<form method="post" action="options.php">
 			<?php settings_fields('activetab_settings_group'); ?>

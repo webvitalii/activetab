@@ -35,10 +35,10 @@ Responsive clean theme. More info at http://web-profile.com.ua/activetab/
 
 == Changelog ==
 
-= 2.6 - 2016-02-02 =
+= 2.6 - 2016-02-03 =
 * removed Options Framework
 * added Settings via Settings API
-* added settings for max width, layout, head code, footer code
+* added settings for max width, layout, excerpt or content in list, head code, footer code
 * added support for 1-col, 2-cols and 3-cols layouts
 * drop support for old IE versions
 * renamed 'activetab' to 'Activetab'
