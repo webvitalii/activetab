@@ -13,8 +13,8 @@ if ( ! isset( $content_width ) ) {
 }
 
 
-if ( ! function_exists( 'activetab_enqueue_scripts_and_styles' ) ) :
-	function activetab_enqueue_scripts_and_styles() {
+if ( ! function_exists( 'activetab_enqueue_scripts' ) ) :
+	function activetab_enqueue_scripts() {
 
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
@@ -27,7 +27,16 @@ if ( ! function_exists( 'activetab_enqueue_scripts_and_styles' ) ) :
 		wp_enqueue_style( 'activetab-bootstrap-theme-style', get_template_directory_uri() . '/bootstrap/css/bootstrap-theme.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
 		wp_enqueue_style( 'activetab-style', get_stylesheet_uri(), array( 'activetab-bootstrap-style', 'dashicons' ), ACTIVETAB_THEME_VERSION, 'all' ); // get_stylesheet_directory_uri() . '/style.css'
 	}
-	add_action( 'wp_enqueue_scripts', 'activetab_enqueue_scripts_and_styles' );
+	add_action( 'wp_enqueue_scripts', 'activetab_enqueue_scripts' );
+endif;
+
+
+if ( ! function_exists( 'activetab_admin_enqueue_scripts' ) ) :
+	function activetab_admin_enqueue_scripts() {
+		// including the WP media scripts here because they are needed for the image upload field
+		wp_enqueue_media();
+	}
+	add_action( 'admin_enqueue_scripts', 'activetab_admin_enqueue_scripts' );
 endif;
 
 

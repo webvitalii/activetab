@@ -23,6 +23,7 @@ function activetab_admin_init() {
 	
 	add_settings_field('max_width', __( 'Maximum width of the website', 'activetab' ), 'activetab_field_max_width_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	add_settings_field('layout', __( 'Layout', 'activetab' ), 'activetab_field_layout_callback', 'activetab_general_page', 'activetab_settings_general_section');
+	add_settings_field('logo_url', __( 'Logo', 'activetab' ), 'activetab_field_logo_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	add_settings_field('excerpt_or_content_in_list', __( 'Show excerpt or content in the list', 'activetab' ), 'activetab_field_excerpt_or_content_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	add_settings_field('code_head', __( 'Head code', 'activetab' ), 'activetab_field_code_head_callback', 'activetab_general_page', 'activetab_settings_general_section');
 	add_settings_field('code_footer', __( 'Footer code', 'activetab' ), 'activetab_field_code_footer_callback', 'activetab_general_page', 'activetab_settings_general_section');
@@ -44,6 +45,7 @@ function activetab_settings_validate($input) {
 	
 	$output['max_width'] = trim($input['max_width']);
 	$output['layout'] = trim($input['layout']);
+	$output['logo_url'] = trim($input['logo_url']);
 	$output['excerpt_or_content_in_list'] = trim($input['excerpt_or_content_in_list']);
 	$output['code_head'] = trim($input['code_head']);
 	$output['code_footer'] = trim($input['code_footer']);
@@ -88,6 +90,45 @@ function activetab_field_layout_callback() {
 		echo '<p><label><input type="radio" name="activetab_settings[layout]" value="'.$key.'"  '.$checked.'> '.$value.'<label></p>'."\n";
 	endforeach;
 	echo '<p class="description">'.__( 'General layout settings', 'activetab' ).'</p>';
+}
+
+
+function activetab_field_logo_callback() {
+	$settings = activetab_get_settings();
+	$default_settings = activetab_default_settings();
+	echo '<input type="text" name="activetab_settings[logo_url]" class="regular-text js-media-input" value="'.$settings['logo_url'].'" />';
+	echo '<a href="#" class="button button-small js-media-choose">'.__( 'Choose image', 'activetab' ).'</a>';
+	
+	if( !empty( $settings['logo_url'] ) ) {
+		echo '<img src="'.$settings['logo_url'].'" />';
+	}
+	
+	?>
+	
+	<script>
+	jQuery(function($){ // document.ready and noConflict mode
+		var custom_media_uploader;
+		$( '.js-media-choose' ).click( function( event ) {
+			event.preventDefault();
+			custom_media_uploader = wp.media.frames.file_frame = wp.media( {
+				title: '<?php _e( 'Choose image', 'activetab' ); ?>',
+				button: {
+					text: '<?php _e( 'Choose image', 'activetab' ); ?>' 
+				},
+				multiple: false
+			});
+			custom_media_uploader.on( 'select', function() {
+				var attachment = custom_media_uploader.state().get( 'selection' ).first().toJSON();
+				$( '.js-media-input' ).val( attachment.url );
+			});
+			custom_media_uploader.open();
+		});
+	});
+	</script>
+
+	<?php
+	
+	echo '<p class="description"></p>';
 }
 
 
