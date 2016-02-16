@@ -1,15 +1,17 @@
 /*
-Theme Name: activetab child theme
+Theme Name: Activetab Child Theme
 Theme URI: http://web-profile.com.ua/wordpress/themes/activetab/
-Description: use this theme to start your activetab child theme development
+Description: Use this theme to start your Activetab child theme development.
 Author: You
-Author URI: http://profiles.wordpress.org/webvitaly/
+Author URI: https://wordpress.org/
 Template: activetab
-Version: 3.0
+Version: 100
 */
 
 @import url("../activetab/style.css");
 
+/* you can override everything you want */
+
 body {
-    padding: 50px; /* you can override necessary styles */
+    padding: 50px; 
 }
