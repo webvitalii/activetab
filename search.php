@@ -29,7 +29,7 @@
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-part', 'nothing-found' ); ?>
+			<?php get_template_part( 'template-parts/nothing', 'found' ); ?>
 
 		<?php endif; ?>
 

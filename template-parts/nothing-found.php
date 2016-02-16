@@ -7,4 +7,4 @@
 			<div class="entry-content">
 				<?php get_search_form(); ?>
 			</div><!-- .entry-content -->
-		</article><!-- #post-0 -->
+		</article><!-- .post -->

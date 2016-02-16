@@ -61,7 +61,7 @@
 
 
 						</div><!-- .entry-content -->
-					</article><!-- #post-0 -->
+					</article><!-- .post -->
 
 <?php get_template_part( 'template-parts/wrap', 'after' ); ?>
 

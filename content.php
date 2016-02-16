@@ -9,7 +9,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php get_template_part( 'template-part', 'thumbnail-list' ); ?>
+	<?php get_template_part( 'template-parts/image', 'thumbnail' ); ?>
 
 	<section class="entry-content">
 

@@ -5,7 +5,7 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
-	<?php get_template_part( 'template-part', 'thumbnail-single' ); ?>
+	<?php get_template_part( 'template-parts/image', 'full' ); ?>
 
 	<section class="entry-content">
 		<?php the_content(); ?>
