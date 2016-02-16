@@ -1,6 +1,6 @@
 <?php
 
-define('ACTIVETAB_THEME_VERSION', '2.6');
+define('ACTIVETAB_THEME_VERSION', '3.0');
 
 
 include( 'inc/activetab-functions.php' );

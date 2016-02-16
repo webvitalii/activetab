@@ -1,44 +1,44 @@
-=== activetab ===
-Theme Name: activetab
+=== Activetab ===
+Theme Name: Activetab
 Theme URI: http://web-profile.com.ua/wordpress/themes/activetab/
 Contributors: webvitaly
 Donate link: http://web-profile.com.ua/donate/
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
-Responsive clean theme. More info at http://web-profile.com.ua/activetab/
+Responsive and flexible theme. More info at http://web-profile.com.ua/activetab/
 
 == Description ==
 
-* responsive and clean
-* two columns, right sidebar, fixed or static multi-level drop down menu
-* widget-ready sidebar and footer areas
+* responsive and flexible
+* 6 layouts: 1-column (content), 2-columns (content/sidebar-right, sidebar-left/content), 3-columns (content/sidebar-left/sidebar-right, sidebar-left/content/sidebar-right, sidebar-left/sidebar-right/content)
+* fixed multi-level drop down menu
+* widget-ready 2 sidebars and footer areas
 * 2 extra page templates: "full width (no sidebar)" and "redirect to first subpage"
 * support for: custom background, custom header, custom menu, editor style, post thumbnails, microformats, rtl language support, sticky post and threaded-comments
+* Search Engines Friendly
 * automatic rss-feeds in the head section, added rss-feed links for posts, comments, categories, tags and authors
 * all site elements are intuitive and users will use the site more easily
-* correct html5 document structure for better search engine indexing
 * translation ready; Ukrainian, Russian, Hebrew and German translations included
 * includes a sample WordPress Child theme for rapid development
 
 
-= activetab theme options: =
+= Activetab theme settings: =
 
+* max width
+* layout
 * custom logo upload
-* show or hide site title in header section
-* show or hide site description in header section
-* menu position type (fixed or static)
-* show excerpt or full content in the list of posts
+* show excerpt or content in the list of posts
 * custom head code - could be inserted any javascript or css code into head section before closing [/head] tag
 * custom footer code - same as head code, but it will be inserted before closing [/body] tag
 
 
 == Changelog ==
 
-= 2.6 - 2016-02-03 =
+= 3.0 - 2016-02-16 =
 * removed Options Framework
 * added Settings via Settings API
-* added settings for max width, layout, excerpt or content in list, head code, footer code
+* added settings: max width, layout, excerpt or content in list, head code, footer code
 * added support for 1-col, 2-cols and 3-cols layouts
 * drop support for old IE versions
 * renamed 'activetab' to 'Activetab'
