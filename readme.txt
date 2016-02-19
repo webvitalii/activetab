@@ -6,11 +6,11 @@ Donate link: http://web-profile.com.ua/donate/
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
-Responsive and flexible theme. More info at http://web-profile.com.ua/activetab/
+Responsive and flexible theme. Features: 6 layouts (1, 2 or 3 columns), widget-ready sidebars, Search Engines Friendly, WooCommerce support and much more. More info at http://web-profile.com.ua/activetab/
 
 == Description ==
 
-* responsive and flexible
+* Responsive and flexible
 * 6 layouts: 1-column (content), 2-columns (content/sidebar-right, sidebar-left/content), 3-columns (content/sidebar-left/sidebar-right, sidebar-left/content/sidebar-right, sidebar-left/sidebar-right/content)
 * fixed multi-level drop down menu
 * widget-ready 2 sidebars and footer areas
@@ -19,6 +19,7 @@ Responsive and flexible theme. More info at http://web-profile.com.ua/activetab/
 * Search Engines Friendly
 * automatic rss-feeds in the head section, added rss-feed links for posts, comments, categories, tags and authors
 * all site elements are intuitive and users will use the site more easily
+* WooCommerce support
 * translation ready; Ukrainian, Russian, Hebrew and German translations included
 * includes a sample WordPress Child theme for rapid development
 
@@ -35,12 +36,13 @@ Responsive and flexible theme. More info at http://web-profile.com.ua/activetab/
 
 == Changelog ==
 
-= 3.0 - 2016-02-16 =
+= 3.0 - 2016-02-18 =
 * removed Options Framework
 * added Settings via Settings API
 * added settings: max width, layout, excerpt or content in list, head code, footer code
 * added support for 1-col, 2-cols and 3-cols layouts
-* drop support for old IE versions
+* added WooCommerce support
+* dropped support for old IE versions
 * renamed 'activetab' to 'Activetab'
 
 = 2.5 - 2016-01-30 =

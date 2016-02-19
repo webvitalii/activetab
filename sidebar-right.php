@@ -42,8 +42,8 @@
 
 
 							<?php
-							$args = array( // 3 most popular posts ordered by comment count
-								'numberposts' => 3,
+							$args = array( // most popular posts ordered by comment count
+								'numberposts' => 5,
 								'post_status' => 'publish',
 								'post_type' => 'post',
 								'orderby' => 'comment_count',
@@ -65,8 +65,8 @@
 
 
 							<?php
-							$args = array( // 3 most recent posts ordered by publish date
-								'numberposts' => 3,
+							$args = array( // most recent posts ordered by publish date
+								'numberposts' => 5,
 								'post_status' => 'publish',
 								'post_type' => 'post',
 								'orderby' => 'post_date',

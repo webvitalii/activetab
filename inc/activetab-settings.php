@@ -10,7 +10,9 @@ if ( ! defined( 'ABSPATH' ) ) { // prevent full path disclosure
 
 
 function activetab_menu() { // add menu item
-	add_theme_page(__( 'Activetab Settings', 'activetab' ), __( 'Activetab Settings', 'activetab' ), 'manage_options', 'activetab', 'activetab_settings');
+	//add_theme_page(__( 'Activetab Settings', 'activetab' ), __( 'Activetab Settings', 'activetab' ), 'manage_options', 'activetab', 'activetab_settings');
+	add_menu_page( __( 'Activetab Settings', 'activetab' ), __( 'Activetab Settings', 'activetab' ), 
+		'manage_options', 'activetab', 'activetab_settings', 'dashicons-layout', 45 );
 }
 add_action('admin_menu', 'activetab_menu');
 
