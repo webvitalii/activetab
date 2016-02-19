@@ -25,9 +25,9 @@
 				<?php if ( is_home() || is_front_page() ) : // show credit links only on homepage
 					// it is completely optional, but if you like the theme I would appreciate it if you keep the credit link at the bottom ?>
 					<?php _e( 'Powered by', 'activetab' ); ?>
-					<a href="http://wordpress.org/" title="<?php _e( 'WordPress CMS', 'activetab' ); ?>" alt="<?php echo esc_attr( __( 'WordPress', 'activetab' ) ); ?>"><i class="dashicons dashicons-wordpress"></i></a>
+					<a href="http://wordpress.org/" title="<?php _e( 'WordPress CMS', 'activetab' ); ?>"><i class="dashicons dashicons-wordpress"></i> <span><?php _e( 'WordPress', 'activetab' ); ?></span></a>
 					<?php _e( '&', 'activetab' ); ?>
-					<a href="http://web-profile.com.ua/wordpress/themes/activetab/" title="<?php _e( 'activetab theme', 'activetab' ); ?>"><?php _e( 'activetab', 'activetab' ); ?></a>
+					<a href="http://web-profile.com.ua/wordpress/themes/activetab/" title="<?php _e( 'Activetab theme', 'activetab' ); ?>"><i class="dashicons dashicons-layout"></i> <span><?php _e( 'Activetab', 'activetab' ); ?></span></a>
 				<?php endif; ?>
 
 				<a href="<?php echo esc_url( get_bloginfo( 'rss2_url' ) ); ?>" class="rss-feed-link" title="<?php echo esc_attr( __( 'Posts RSS feed', 'activetab' ) ); ?>"><i class="dashicons dashicons-rss"></i></a>

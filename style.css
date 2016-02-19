@@ -1,7 +1,7 @@
 /*
 Theme Name: Activetab
 Theme URI: http://web-profile.com.ua/wordpress/themes/activetab/
-Description: Activetab is Responsive and Flexible theme. Features: 6 templates (1 column, 2 columns, 3 columns, 2 sidebars), Search Engine Friendly, WooCommerce Compatible, Cross-Browser Compatible, RTL-Language Support. More info at http://web-profile.com.ua/activetab/
+Description: Activetab is Responsive and Flexible theme. Features: 6 templates (1 column, 2 columns, 3 columns, 2 sidebars), Search Engines Friendly, WooCommerce Compatible, Cross-Browser Compatible and much more. More info at http://web-profile.com.ua/activetab/
 Version: 3.0
 Author: webvitaly
 Author URI: http://web-profile.com.ua/wordpress/
@@ -915,7 +915,7 @@ table#wp-calendar td, table#wp-calendar th {
 
 /* ========== footer ========== */
 .site-footer {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 16px;
 	color: #555;
 	padding: 20px 0 0 0;
@@ -928,9 +928,22 @@ table#wp-calendar td, table#wp-calendar th {
 }
 .site-footer .site-footer-left {}
 .site-footer .site-footer-right {
-	opacity: 0.8;
+	
+}
+.site-footer .site-footer-right i {
+	text-decoration: none;
+    font-size: 16px;
+    top: 3px;
+    position: relative;
+}
+.site-footer .site-footer-right a {
+	text-decoration: none;
+	color: #000;
 	transition: all 0.3s ease;
 }
-.site-footer .site-footer-right:hover {
-	opacity: 1;
+.site-footer .site-footer-right a:hover {
+	color: #555;
+}
+.site-footer .site-footer-right a span {
+	text-decoration: underline;
 }
