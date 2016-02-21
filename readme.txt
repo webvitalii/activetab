@@ -39,7 +39,7 @@ Responsive and flexible theme. Features: 6 layouts (1, 2 or 3 columns), widget-r
 = 3.0 - 2016-02-18 =
 * removed Options Framework
 * added Settings via Settings API
-* added settings: max width, layout, excerpt or content in list, head code, footer code
+* added settings: max width, layout, custom logo upload, excerpt or content in list, head code, footer code
 * added support for 1-col, 2-cols and 3-cols layouts
 * added WooCommerce support
 * dropped support for old IE versions
