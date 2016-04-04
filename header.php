@@ -24,7 +24,7 @@
 		wp_nav_menu( array(
 			'theme_location' => 'primary-nav',
 			'container' => 'nav',
-			'container_class' => 'nav-menu clearfix',
+			'container_class' => 'nav-menu fx-menu fx-menu-dark-transparent clearfix',
 			'menu_class' => 'nav',
 			'fallback_cb' => 'activetab_list_pages'
 		) );

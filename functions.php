@@ -1,6 +1,6 @@
 <?php
 
-define('ACTIVETAB_THEME_VERSION', '3.0');
+define('ACTIVETAB_THEME_VERSION', '3.1');
 
 
 include( 'inc/activetab-functions.php' );
@@ -22,9 +22,13 @@ if ( ! function_exists( 'activetab_enqueue_scripts' ) ) :
 
 		//wp_enqueue_script( 'activetab-bootstrap-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array( 'jquery' ), ACTIVETAB_THEME_VERSION );
 		wp_enqueue_script( 'activetab-script', get_template_directory_uri() . '/js/activetab.js', array( 'jquery' ), ACTIVETAB_THEME_VERSION );
-
+		
+		wp_enqueue_style( 'activetab-flexify-style', get_template_directory_uri() . '/css/flexify.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
+		
 		wp_enqueue_style( 'activetab-bootstrap-style', get_template_directory_uri() . '/bootstrap/css/bootstrap.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
+		
 		wp_enqueue_style( 'activetab-bootstrap-theme-style', get_template_directory_uri() . '/bootstrap/css/bootstrap-theme.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
+		
 		wp_enqueue_style( 'activetab-style', get_stylesheet_uri(), array( 'activetab-bootstrap-style', 'dashicons' ), ACTIVETAB_THEME_VERSION, 'all' ); // get_stylesheet_directory_uri() . '/style.css'
 	}
 	add_action( 'wp_enqueue_scripts', 'activetab_enqueue_scripts' );
@@ -55,7 +59,7 @@ if ( ! function_exists( 'activetab_setup' ) ) :
 
 		//add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat', ) ); // post formats for future
 
-		register_nav_menu( 'primary-nav', __( 'Primary menu', 'activetab' ) ); // main nav menu in header
+		register_nav_menu( 'primary-nav', __( 'Primary menu', 'activetab' ) );
 
 		add_theme_support( 'custom-background' );
 
@@ -141,7 +145,7 @@ if ( ! function_exists( 'activetab_register_widgets' ) ) :
 		register_sidebar( array(
 			'name' => __( 'Footer', 'activetab' ),
 			'id' => 'footer',
-			//'description' => 'description',
+			//'description' => '',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h4 class="widget-title">',
@@ -155,7 +159,7 @@ endif;
 if ( ! function_exists( 'activetab_list_pages' ) ) :
 	function activetab_list_pages() {
 		?>
-		<nav class="nav-menu nav clearfix" role="navigation"><ul class="nav"><?php wp_list_pages( 'title_li=' ); ?></ul></nav>
+		<nav class="fx-menu fx-menu-dark-transparent nav-menu nav clearfix" role="navigation"><ul class="nav"><?php wp_list_pages( 'title_li=' ); ?></ul></nav>
 		<?php
 	}
 endif;

@@ -2,7 +2,7 @@
 Theme Name: Activetab
 Theme URI: http://web-profile.com.ua/wordpress/themes/activetab/
 Description: Activetab is Responsive and Flexible theme. Features: 6 templates (1 column, 2 columns, 3 columns, 2 sidebars), Search Engines Friendly, WooCommerce Compatible, Cross-Browser Compatible and much more. More info at http://web-profile.com.ua/activetab/
-Version: 3.0
+Version: 3.1
 Author: webvitaly
 Author URI: http://web-profile.com.ua/wordpress/
 Tags: white, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, buddypress
@@ -135,7 +135,8 @@ a {
 	text-decoration: underline;
 }
 a:visited {
-	color: #333; /*color: #551A8B;*/
+	/*color: #333;*/
+	/*color: #551A8B;*/
 }
 a:hover {
 	/*color: #06e;*/
@@ -645,153 +646,6 @@ body.admin-bar .navbar-fixed-top { /* move menu below admin-bar */
 	color: #fff;
 	background-color: #333;
 }
-.nav-menu {
-	clear: both;
-	display: block;
-	float: left;
-	margin: 0;
-	width: 100%;
-}
-.nav-menu ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-.site-navigation .nav-menu li a {
-	padding: 12px 12px;
-	line-height: 1.2em;
-	transition: all 0.3s ease;
-}
-.site-navigation .nav-menu li li a {
-	padding: 8px 12px;
-}
-.nav-menu > ul > li.page_item_has_children > a,
-.nav-menu > ul > li.menu-item-has-children > a {
-	position: relative;
-}
-.nav-menu > ul > li.page_item_has_children > a:after,
-.nav-menu > ul > li.menu-item-has-children > a:after { /* adding "to-bottom" arrow */
-	content: "";
-	position: absolute;
-	display: block;
-	/*right: 3px;
-	top: 50%;
-	margin-top: -2px;*/
-	left: 50%;
-	bottom: 3px;
-	margin-left: -2px;
-	opacity: 0.8;
-	width: 0;
-	height: 0;
-	border-left: 4px solid transparent; /* magic arrow */
-	border-right: 4px solid transparent;
-	border-top: 4px solid #999;
-}
-.nav-menu > ul li.page_item_has_children li.page_item_has_children > a,
-.nav-menu > ul li.menu-item-has-children li.menu-item-has-children > a {
-	position: relative;
-}
-.nav-menu > ul li.page_item_has_children li.page_item_has_children > a:after,
-.nav-menu > ul li.menu-item-has-children li.menu-item-has-children > a:after { /* adding "to-right" arrow */
-	content: "";
-	position: absolute;
-	display: block;
-	right: 3px;
-	top: 50%;
-	margin-top: -2px;
-	opacity: 0.5;
-	width: 0;
-	height: 0;
-	border-top: 4px solid transparent; /* magic arrow */
-	border-bottom: 4px solid transparent;
-	border-left: 4px solid #999;
-}
-.nav-menu > ul.pull-right li.page_item_has_children li.page_item_has_children > a:after,
-.nav-menu > ul.pull-right li.menu-item-has-children li.menu-item-has-children > .menu-item:after { /* adding "to-left" arrow */
-	right: auto;
-	left: 2px;
-	border-top: 4px solid transparent; /* magic arrow */
-	border-bottom: 4px solid transparent;
-	border-right: 4px solid #999;
-	border-left: 0;
-}
-.nav-menu > ul {
-	margin-left: 2px;
-}
-.nav-menu > ul > li {
-	border-right: 1px solid #555;
-}
-.nav-menu > ul > li:last-child {
-	border-right: 0;
-}
-.nav-menu li {
-	float: left;
-	position: relative;
-}
-.nav-menu a {
-	display: block;
-	padding: 0 1.0em;
-	text-decoration: none;
-	/*line-height: 2.333em;
-	font-size: 16px;*/
-}
-.nav-menu ul ul { /* submenu styles */
-	border-left: 1px solid #555;
-	display: none;
-	float: left;
-	margin: 0;
-	position: absolute;
-	top: 2.23em; /* 2.33em */
-	left: -1px;
-	width: 260px;
-	z-index: 99999;
-}
-.nav-menu ul ul ul { /* submenu styles level-2 */
-	left: 100%;
-	top: 0;
-}
-.nav-menu ul ul a {
-	background-color: #1B1B1B;
-	border-bottom: 1px solid #555;
-	color: #999;
-	height: auto;
-	/*line-height: 1.4em; */
-	padding: 6px 15px;
-	width: 240px;
-}
-.nav-menu li.current_page_item > a, .nav-menu li.current-page-item > a,
-.nav-menu li.current_menu_item > a, .nav-menu li.current-menu-item > a {
-	background-color: #333;
-	color: #fff;
-}
-.nav-menu li.current_page_ancestor > a, .nav-menu li.current-page-ancestor > a,
-.nav-menu li.current_menu_ancestor > a, .nav-menu li.current-menu-ancestor > a {
-	background-color: #333;
-	color: #fff;
-}
-.nav-menu li:hover > a,
-	/*.nav-menu ul ul :hover > a,*/
-.nav-menu a:focus {
-	background: #444;
-	color: #eee;
-}
-/*.nav-menu li:hover > a,
-.nav-menu a:focus {
-	background-color: #e5e5e5;
-	color: #373737;
-}*/
-.nav-menu ul li:hover > ul {
-	display: block;
-}
-.nav-menu .current-menu-item > a,
-.nav-menu .current-menu-ancestor > a,
-.nav-menu .current_page_item > a,
-.nav-menu .current-page-item > a,
-.nav-menu .current_page_ancestor > a,
-.nav-menu .current-page-ancestor > a {
-	/*font-weight: bold;*/ /* removed bold because menu with active items has different width */
-}
-
 
 /* ========== site-header ========== */
 .site-header {
