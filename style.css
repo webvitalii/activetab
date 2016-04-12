@@ -573,18 +573,17 @@ button {
 	margin: 20px 0;
 }
 #content .entry-meta {
-	/*color: #808080;*/
-	color: #343434;
+	color: #777;
 	margin: 5px 0;
 	font-size: 14px; /* 14px is the font size where FontAwesome is pixel perfect */
-	opacity: 0.6;
 	transition: all .3s ease;
 }
-#content .entry-meta:hover {
-	opacity: 1;
+#content .entry-meta a {
+	color: #777;
+	transition: all .3s ease;
 }
-#content .entry-meta:not(:hover) a { /* show same color for links if .entry-meta is not hovered */
-	color: #343434;
+#content .entry-meta a:hover {
+	color: #333;
 	transition: all .3s ease;
 }
 #content .entry-meta .entry-meta-item {
@@ -596,7 +595,7 @@ button {
 
 
 article.hentry {
-	border-bottom: 2px solid #ddd;
+	border-bottom: 1px solid #ddd;
 	margin-right: 0;
 	padding-bottom: 20px;
 	margin-bottom: 20px;

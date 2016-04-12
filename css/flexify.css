@@ -938,6 +938,76 @@ template {
 	top: 0;
 }
 
+/* ---------- nav - menu - light ---------- */
+
+.fx-menu-light {
+	background: #eee;
+	color: #333;
+}
+
+.fx-menu-light a {
+	color: #333;
+}
+
+.fx-menu-light li a:hover, 
+.fx-menu-light li a:focus,
+.fx-menu-light li.current_page_item > a, 
+.fx-menu-light li.current-page-item > a,
+.fx-menu-light li.current_menu_item > a, 
+.fx-menu-light li.current-menu-item > a,
+.fx-menu-light li.current_page_ancestor > a, 
+.fx-menu-light li.current-page-ancestor > a,
+.fx-menu-light li.current_menu_ancestor > a, 
+.fx-menu-light li.current-menu-ancestor > a {
+	color: #111;
+	background-color: #ddd;
+}
+
+.fx-menu-light ul ul {
+	background: #eee;
+	color: #333;
+}
+
+.fx-menu-light ul li.page_item_has_children > a:after,
+.fx-menu-light ul li.menu-item-has-children > a:after {
+	border-top: 4px solid #333;
+}
+
+/* ---------- nav - menu - light transparent ---------- */
+
+.fx-menu-light-transparent {
+	background-color: transparent;
+	color: #333;
+}
+
+.fx-menu-light-transparent a {
+	color: #333;
+}
+
+.fx-menu-light-transparent li a:hover, 
+.fx-menu-light-transparent li a:focus,
+.fx-menu-light-transparent li.current_page_item > a, 
+.fx-menu-light-transparent li.current-page-item > a,
+.fx-menu-light-transparent li.current_menu_item > a, 
+.fx-menu-light-transparent li.current-menu-item > a,
+.fx-menu-light-transparent li.current_page_ancestor > a, 
+.fx-menu-light-transparent li.current-page-ancestor > a,
+.fx-menu-light-transparent li.current_menu_ancestor > a, 
+.fx-menu-light-transparent li.current-menu-ancestor > a {
+	color: #111;
+	background-color: #ddd;
+}
+
+.fx-menu-light-transparent ul ul {
+	background: #eee;
+	color: #333;
+}
+
+.fx-menu-light-transparent ul li.page_item_has_children > a:after,
+.fx-menu-light-transparent ul li.menu-item-has-children > a:after {
+	border-top: 4px solid #333;
+}
+
 /* ---------- nav - menu - dark ---------- */
 
 .fx-menu-dark {
@@ -949,7 +1019,16 @@ template {
 	color: #eee;
 }
 
-.fx-menu li a:hover {
+.fx-menu-dark li a:hover, 
+.fx-menu-dark li a:focus,
+.fx-menu-dark li.current_page_item > a, 
+.fx-menu-dark li.current-page-item > a,
+.fx-menu-dark li.current_menu_item > a, 
+.fx-menu-dark li.current-menu-item > a,
+.fx-menu-dark li.current_page_ancestor > a, 
+.fx-menu-dark li.current-page-ancestor > a,
+.fx-menu-dark li.current_menu_ancestor > a, 
+.fx-menu-dark li.current-menu-ancestor > a {
 	color: #fff;
 	background-color: #111;
 }
@@ -964,10 +1043,6 @@ template {
 	border-top: 4px solid #eee;
 }
 
-.fx-menu-dark ul ul {
-	background: #333;
-}
-
 /* ---------- nav - menu - dark transparent ---------- */
 
 .fx-menu-dark-transparent {
@@ -979,7 +1054,16 @@ template {
 	color: #eee;
 }
 
-.fx-menu li a:hover {
+.fx-menu-dark-transparent li a:hover, 
+.fx-menu-dark-transparent li a:focus,
+.fx-menu-dark-transparent li.current_page_item > a, 
+.fx-menu-dark-transparent li.current-page-item > a,
+.fx-menu-dark-transparent li.current_menu_item > a, 
+.fx-menu-dark-transparent li.current-menu-item > a,
+.fx-menu-dark-transparent li.current_page_ancestor > a, 
+.fx-menu-dark-transparent li.current-page-ancestor > a,
+.fx-menu-dark-transparent li.current_menu_ancestor > a, 
+.fx-menu-dark-transparent li.current-menu-ancestor > a {
 	color: #fff;
 	background-color: #111;
 }
