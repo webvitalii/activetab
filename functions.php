@@ -9,7 +9,7 @@ include( 'inc/activetab-settings.php' );
 
 
 if ( ! isset( $content_width ) ) {
-	$content_width = 600;
+	$content_width = 800;
 }
 
 
