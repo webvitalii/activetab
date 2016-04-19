@@ -347,7 +347,7 @@ endif;
 
 
 if ( ! function_exists( 'activetab_excerpt_more' ) ) :
-	function activetab_excerpt_more( $more ) { // "more-link" is bad for seo and for usability - http://web-profile.com.ua/web/web-principles/more-link/
+	function activetab_excerpt_more( $more ) { // "more-link" is bad for seo and for usability - http://web-profile.net/web/web-principles/more-link/
 		return '...';
 	}
 	add_filter('excerpt_more', 'activetab_excerpt_more');
