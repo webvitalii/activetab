@@ -36,6 +36,10 @@ Responsive and flexible theme. Features: 6 layouts (1, 2 or 3 columns), widget-r
 
 == Changelog ==
 
+= 3.1 - 2016-04-20 =
+* switched to flexify.css
+* bugfixing, refactoring and code cleanup
+
 = 3.0 - 2016-02-18 =
 * removed Options Framework
 * added Settings via Settings API
