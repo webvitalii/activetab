@@ -82,29 +82,7 @@ blockquote, q {
 }
 
 /* ========== table ========== */
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-	width: 100%;
-	margin-bottom: 20px;
-}
-caption, th, td {
-	font-weight: normal;
-	text-align: left;
-	vertical-align: top;
-}
-table th, table td {
-	padding: 8px;
-	text-align: left;
-	vertical-align: top;
-	border-top: 1px solid #ddd;
-}
-table th {
-	font-weight: bold;
-}
-table thead th {
-	vertical-align: bottom;
-}
+
 table caption + thead tr:first-child th,
 table caption + thead tr:first-child td,
 table colgroup + thead tr:first-child th,
@@ -776,19 +754,18 @@ table#wp-calendar td, table#wp-calendar th {
 	text-decoration: underline;
 }
 
-
 .icon-20 {
 	display: inline-block;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    line-height: 1;
-    text-decoration: inherit;
-    font-weight: 400;
-    font-style: normal;
-    vertical-align: baseline;
-    text-align: center;
-    -webkit-transition: color .1s ease-in 0;
-    transition: color .1s ease-in 0;
-    -webkit-font-smoothing: antialiased;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	line-height: 1;
+	text-decoration: inherit;
+	font-weight: 400;
+	font-style: normal;
+	vertical-align: baseline;
+	text-align: center;
+	-webkit-transition: color .1s ease-in 0;
+	transition: color .1s ease-in 0;
+	-webkit-font-smoothing: antialiased;
 }
