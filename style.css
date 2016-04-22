@@ -466,12 +466,7 @@ button {
 /* ========== comments ========== */
 .comment-meta {
 	color: #343434;
-	font-size: 14px; /* 14px is the font size where FontAwesome is pixel perfect */
-	opacity: 0.7;
-	transition: all .3s ease;
-}
-.comment-meta:hover {
-	opacity: 1;
+	font-size: 14px;
 }
 .comment-meta .comment-meta-item {
 	margin-right: 20px;
@@ -507,20 +502,6 @@ button {
 
 .comment-reply-link {
 	color: #808080;
-	opacity: 0.6;
-	transition: all 0.3s ease;
-}
-.commentlist li.comment:hover .comment-reply-link {
-	opacity: 1;
-}
-.comment-reply-link i { /* icon */
-	margin-top: 4px;
-	margin-right: 4px;
-}
-
-#cancel-comment-reply i { /* icon */
-	margin-top: 2px;
-	margin-right: 4px;
 }
 
 .commentlist .comment-avatar {
@@ -575,7 +556,7 @@ button {
 #content .entry-meta {
 	color: #777;
 	margin: 5px 0;
-	font-size: 14px; /* 14px is the font size where FontAwesome is pixel perfect */
+	font-size: 14px;
 	transition: all .3s ease;
 }
 #content .entry-meta a {
@@ -755,15 +736,12 @@ table#wp-calendar td, table#wp-calendar th {
 /* ========== rss feed ========== */
 .rss-feed-link {
 	margin-left: 10px;
-	color: #F3A96F;
+	color: #555;
 	font-size: 18px;
 	line-height: 18px;
 }
 .rss-feed-link:hover {
-	color: #F3A96F;
-}
-.rss-feed-link i {
-	vertical-align: baseline;
+	color: #000;
 }
 
 /* ========== footer ========== */
@@ -785,9 +763,6 @@ table#wp-calendar td, table#wp-calendar th {
 }
 .site-footer .site-footer-right i {
 	text-decoration: none;
-    font-size: 16px;
-    top: 3px;
-    position: relative;
 }
 .site-footer .site-footer-right a {
 	text-decoration: none;
@@ -799,4 +774,21 @@ table#wp-calendar td, table#wp-calendar th {
 }
 .site-footer .site-footer-right a span {
 	text-decoration: underline;
+}
+
+
+.icon-20 {
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 1;
+    text-decoration: inherit;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: baseline;
+    text-align: center;
+    -webkit-transition: color .1s ease-in 0;
+    transition: color .1s ease-in 0;
+    -webkit-font-smoothing: antialiased;
 }

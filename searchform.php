@@ -6,7 +6,7 @@
 				<div class="input-group">
 					<input type="search" value="<?php echo esc_attr( get_search_query() ); ?>" class="input-medium form-control" name="s">
 				</div>
-				<button type="submit" class="btn btn-primary"><i class="dashicons dashicons-search"></i> <?php echo esc_attr( __( 'Search', 'activetab' ) ); ?></button>
+				<button type="submit" class="btn btn-primary"><i class="ionicon ion-ios-search-strong icon-20"></i> <?php echo esc_attr( __( 'Search', 'activetab' ) ); ?></button>
 			</fieldset>
 		</div>
 	</form>
