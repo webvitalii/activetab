@@ -36,6 +36,10 @@ Responsive and flexible theme. Features: 6 layouts (1, 2 or 3 columns), widget-r
 
 == Changelog ==
 
+= 3.2 - 2016-04-22 =
+* moved resources to assets folder
+* replaced dashicons with ionicons
+
 = 3.1 - 2016-04-20 =
 * switched to flexify.css
 * bugfixing, refactoring and code cleanup
@@ -215,8 +219,8 @@ activetab theme is distributed under the terms of the GNU GPL
 = Bundled Resources: =
 
 * [Bootstrap](http://getbootstrap.com/) licensed under [MIT](http://opensource.org/licenses/MIT)
+* [Ionicons](http://ionicons.com/) licensed under [MIT](http://opensource.org/licenses/MIT)
 * [Pixabay](http://pixabay.com/) public domain images
-* [Dashicons](https://developer.wordpress.org/resource/dashicons/) licensed under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
 
 
 = Images used: =

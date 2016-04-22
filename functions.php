@@ -1,6 +1,6 @@
 <?php
 
-define('ACTIVETAB_THEME_VERSION', '3.1');
+define('ACTIVETAB_THEME_VERSION', '3.2');
 
 
 include( 'inc/activetab-functions.php' );
@@ -20,14 +20,14 @@ if ( ! function_exists( 'activetab_enqueue_scripts' ) ) :
 			wp_enqueue_script( 'comment-reply' );
 		}
 
-		//wp_enqueue_script( 'activetab-bootstrap-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array( 'jquery' ), ACTIVETAB_THEME_VERSION );
-		wp_enqueue_script( 'activetab-script', get_template_directory_uri() . '/js/activetab.js', array( 'jquery' ), ACTIVETAB_THEME_VERSION );
+		//wp_enqueue_script( 'activetab-bootstrap-script', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.js', array( 'jquery' ), ACTIVETAB_THEME_VERSION );
+		wp_enqueue_script( 'activetab-script', get_template_directory_uri() . '/assets/js/activetab.js', array( 'jquery' ), ACTIVETAB_THEME_VERSION );
 		
-		wp_enqueue_style( 'activetab-flexify-style', get_template_directory_uri() . '/css/flexify.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
+		wp_enqueue_style( 'activetab-flexify-style', get_template_directory_uri() . '/assets/flexify/css/flexify.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
 		
-		wp_enqueue_style( 'activetab-bootstrap-style', get_template_directory_uri() . '/bootstrap/css/bootstrap.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
+		wp_enqueue_style( 'activetab-bootstrap-style', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
 		
-		wp_enqueue_style( 'activetab-bootstrap-theme-style', get_template_directory_uri() . '/bootstrap/css/bootstrap-theme.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
+		wp_enqueue_style( 'activetab-bootstrap-theme-style', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap-theme.css', array(), ACTIVETAB_THEME_VERSION, 'all' );
 		
 		wp_enqueue_style( 'activetab-style', get_stylesheet_uri(), array( 'activetab-bootstrap-style', 'dashicons' ), ACTIVETAB_THEME_VERSION, 'all' ); // get_stylesheet_directory_uri() . '/style.css'
 	}
