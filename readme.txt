@@ -36,7 +36,7 @@ Responsive and flexible theme. Features: 6 layouts (1, 2 or 3 columns), widget-r
 
 == Changelog ==
 
-= 3.2 - 2016-04-22 =
+= 3.2 - 2016-04-25 =
 * moved resources to assets folder
 * replaced dashicons with ionicons
 
